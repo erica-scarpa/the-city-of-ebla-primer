@@ -1,11 +1,296 @@
-# Hello bookdown 
+# Introduction
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
+## What Sparked the Ebla Excavations?
 
-## A section
+The exploration of the civilization that thrived in the ancient city of Ebla (mod. [Tell Mardikh](https://pleiades.stoa.org/places/869702586)) represents a relatively recent area of study. Despite its size, spanning 60 hectares, the site remained largely overlooked until University of Rome ‘La Sapienza’ archaeologist Paolo Matthiae started investigations in 1964. Matthiae’s interest was sparked during a visit to the Aleppo Museum, where he encountered a stone basin, unearthed at Tell Mardikh in the late 1950s by local farmers [@Matthiae1995a, 42-43]. While archaeological investigations at the site started in 1964, it wasn’t until 1968 that Matthiae and his colleagues were officially able to identify the site as the ancient city of Ebla.
+Led by Matthiae and co-directed by Frances Pinnock, the Italian Archaeological Expedition to Syria (MAIS) conducted uninterrupted excavations at the tell from 1964 to 2010. Unfortunately, archaeological research was forced to stop due to the political crisis that began in Syria in spring 2011. A detailed look at the field operations conducted between 1964 and 2010 can be found in Matthiae [-@Matthiae2013d] and Matthiae [-@Matthiae2014d].
 
-All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+## The Archives – Size, Location and Language
 
-### An unnumbered section {-}
+The Ebla Royal Archives represent the oldest organized collection of documents in the history of the ancient Near East found *in situ*. Dated to around 2400 BCE, they consist primarily of the Great Archive (L.2769) and several smaller rooms. However, a crucial distinction must be drawn between two interpretations of the term "archive.” In the first sense, an archive signifies a designated physical space for document storage, such as a room equipped with shelves. The Great Archive (L.2769) and the Small Archive (L.2712) demonstrably fall under this definition due to the presence of such features [@Matthiae1986c; @Peyronel2006]. The second interpretation encompasses any organized collection of documents, irrespective of their physical location. Most findings at Ebla cannot be explicitly defined as archives in the first interpretation as outlined above, so epigraphic finds have been divided between primary (archival rooms; spaces for short-term consultation) and secondary (tablets scattered in rooms for unclear purposes), as outlined Matthiae [-@Matthiae1986c, 57-58] and Peyronel [-@Peyronel2006, 260-261]. 
+The documents are written in an archaic northern Semitic language, which has been studied extensively since its discovery in 1974 [@DAgostino1990a; @Krebernik1996b; @HuehnergardWoods2008; @Catagnoti2012a; @Tonietti2013a; @Tonietti2018b], although full understanding of the grammar and morphology is a recent development. Additionally, the administrative terminology heavily relies on Sumerian logograms: while Sumerian was most likely not spoken in the region, scribes adopted its writing system. This combination of languages, with its inherent lexical shifts, creates challenges in interpreting the texts.
 
-Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+### The Discoveries – Key Artefacts and Texts
+
+The first cuneiform tablets were found in 1974 within Room L.2586 at the bottom of a jar, situated north of the Monumental stairway in the so-called Royal Palace G [@Matthiae2008a, 64; @Archi2019d, 6]. This initial find consisted of 42 lenticular tablets, primarily documenting silver and gold objects. Notably, the list of Ebla’s rulers [TM.74.G.120, published in @Archi1988b, 213] belongs to this group. In 1975, excavations unearthed two significant archives: the Great Archive (L.2769) and the Small Archive (L.2712). News of the discovery garnered international attention ([1](https://archivio.unita.news/assets/main/1976/03/16/page_003.pdf), [2](https://www.nytimes.com/1976/10/25/archives/discovey-of-an-ancient-city-in-syria-called-sensational.html)) and revolutionized our understanding of the ancient Near East. The Small Archive L.2712, found in August 1975, contained roughly 1,000 excavation numbers representing an estimated 211 complete tablets. These documents, primarily recording food rations, date to the final months before Ebla’s destruction. While Milano published 115 tablets [@Milano1990a], approximately 170 remain unpublished.
+
+Less than a month later, a significant discovery of over 15,000 tablets, fragments, and chips occurred within Room L.2769. Estimates suggest that the Great Archive originally housed between 4,000 and 5,000 tablets [@Matthiae2008a, 80; @Bonechi2013, 248]. These materials primarily comprised administrative records concerning monthly textile distributions and annual metal accounts, alongside lexical texts, literary compositions, and approximately 60 diplomatic documents [for an assessment, see @Scarpa2023, 11–14].
+A small number of additional fragments were recovered from Room L.2769 in 1976. The same year also saw the discovery of roughly 100 documents (reconstructed from 655 fragments) within Vestibule L.2875, adjoining the Great Archive. Notably, twenty of these documents, primarily letters, have been published by Catagnoti and Fronzaroli [-@CatagnotiFronzaroli2020].
+The excavation of the Trapezoidal Archive (L.2764) took place in 1976, yielding approximately 600 excavation numbers. These documents primarily concern livestock deliveries and remain unpublished. Finally, 1976 also saw the discovery of 22 documents found on burnt wooden planks within the center of the Audience Court L.2752. All these documents have been published by Sollberger [-@Sollberger1986] and re-edited by Pettinato [-@Pettinato1996a]. 
+
+Occasional discoveries occurred from 2004 to 2010, culminating in the finding of the final group of tablets in 2004 within storeroom L.8496 [@Archi2015b].
+
+For a plan of the find spots within the site, see Porter [-@Porter2012, 200].
+
+## Good Practices for Quoting Sources and Transliteration Conventions
+
+Due to circumstances of their discovery, the Ebla tablets exhibit unique characteristics when it comes to publication, citation, and joining. A key factor is that all tablets were found at Ebla, leading to the general assumption of local production. However, some diplomatic documents hint at local copies of foreign texts, suggesting a more nuanced picture [@Bonechi2016k, 6-7]. It must be noted that archaeologists adopted a single **excavation number** system for all finds at Ebla. This system, exemplified by TM.75.G.12345 (Tell Mardikh, year 75, sector G, object number 12345), does not differentiate between tablets, fragments, or other artifacts. Consequently, the excavation number alone offers no clue about the object’s nature [@Scarpa2023, 20]. Each complete tablet or single fragment present an excavation number: the Ebla sources are most often quoted by their **publication number** (e.g [*ARET* I, 1](http://ebda.cnr.it/tablet/view/2)), but good practice would be to also refer to the excavation number (e.g *ARET* I, 1 = TM.75.G.2525). This is recommended practice, since the publication number does not provide information on potential joins (e.g, [*ARET* XX 7](http://ebda.cnr.it/tablet/view/3096) = TM.75.G.1731+TM.75.G.2498).
+
+Sources cited only by excavation number are likely **unpublished**. For example, TM.75.G.2396 [studied by Pettinato and D'Agostino -@PettinatoDAgostino1994] was later published as [ARET XIII 7](http://ebda.cnr.it/tablet/view/2856) by Pelio Fronzaroli [-@Fronzaroli2003a]. Therefore, when citing unpublished sources, it is advisable to verify their current publication status. This verification can be readily accomplished by consulting the excavation number within the "Concordances” sub-section of the [EbDA database](http://ebda.cnr.it/) (see below).
+
+During the excavation post-processing phase or subsequent years, dozens of fragments have been successfully joined. However, the sheer volume of discovered materials necessitates ongoing review, as published incomplete tablets may subsequently be found to join with additional fragments. This is the case of [*ARET* I 2](http://ebda.cnr.it/tablet/view/3) = TM.75.G.10016 + [*ARET* IV 23](http://ebda.cnr.it/tablet/view/1109) = TM.75.G.1886 [@Bonechi2020c]. In addition, several joins have been identified based on linguistic features, rather than on the observation of physical features [@Bonechi2023b]. For typologies of different joins that can be found in Ebla sources, see Di Filippo, Maiocchi and Scarpa [-@DiFilippoEtAl2023a, 139-142].
+
+## Editorial conventions
+
+Editorial conventions employed in editions may vary depending on the scholar, with specific notations reflecting the state of document preservation. Broken text is typically indicated by square brackets, […]. In lacunae, the reading of certain signs can be confidently proposed based on parallels. For instance, in the sequence [x x *BU*]-*DI* [N] ku₃:bar₆, at least two signs (marked ‘x’) likely preceded the term *BU-DI* ("toggle-pin”), while a numeral ([N]) denoted its value in silver shekels (ku₃:bar₆). Half upper brackets signify damaged but still legible signs, as exemplified by ^dingir^KU-*ra*-⸢*ma*⸣-*i-da* (a personal name). Notably, the Materiali Epigrafici di Ebla series occasionally utilizes parentheses ‘()’ to denote signs illegible in photographs, as all documents within these volumes were edited based on photographic reproductions rather than the original artifacts.
+
+### Transliteration
+
+Note that the following transliteration conventions are standard in the field:
+
+- **Eblaite** is typically denoted in lowercase italics, such as PN *i-bi*₂-*zi-kir* (Ibbi-zikir), GN *ma-ri*₂^ki^ (Mari).
+-	**Semitograms**, also referred to as Akkadograms or Eblaitograms [@Conti1993, 106-107], are transliterated in uppercase italics, for example, *MA-LIK-TUM* ("queen”), *GU*₂-*BAR* (*kubārum*, a unit of measure for arids), or *LI-IM* (*liʾmum*, 1,000). Although this convention has not been universally adopted in text editions, some scholars use it in their writings.
+-	**Sumerian** is represented in lowercase, like šu-mu-tag₄ ("to deliver”) or GN kiš^ki^ (Kiš).
+-	Signs of **uncertain reading** or instances of unusual spelling are indicated in uppercase, e.g., DU.DU or ^dingir^ʾ*a*₃(NI)-da-balx(KUL), or small caps, e.g. <span class="small-caps">giš</span>-geštug-la₂. Occasionally, uncertain signs likely bearing a Semitic reading are transcribed in uppercase italics; Pomponio [-@Pomponio2008a; -@Pomponio2013a] adopts this convention, as seen in PN *EN-zi-da-ar*, where EN, according to him, carries a syllabic value. However, this may potentially lead to confusion with Semitograms.
+-	**Phonetic transcriptions** are represented in lowercase within slashes, such as /battāqu daynim/, the phonetic transcription of the entry 1327’ of the bilingual lexical list known as *Vocabolario di Ebla* (di-ku₅ / *ba-da-qu*₂ *da-ne-u*[*m*], "to decide a litigation”).
+
+
+
+## Published Editions
+
+The primary source for studying Ebla comes from two publication series: 
+
+- *Archivi Reali di Ebla, Testi* (*ARET*), Rome: This series, currently containing nineteen volumes, publishes edited texts from the Ebla royal archives. 
+- *Materiali Epigrafici di Ebla* (*MEE*), Rome and Naples: active from 1979 to 2001, this series published nine volumes of Eblaite texts.
+
+There is minimal overlap between the two series. Notably, most lexical documents, while originally published in *MEE*, are planned for updated editions within the *ARET* series [@Archi2022b]. Several sources have been published in articles and conference proceedings, such as TM.75.G.1679 [@Biga2018b, 65-67].
+The [Ebla Digital Archives Project](http://ebda.cnr.it/) (EbDA), launched in 2007, offers a comprehensive digital resource for researchers studying the ancient city of Ebla. It includes digital editions of most of the sources published up to date [@DiFilippoEtAl2018]. Users can explore the transliterations in two ways: by [publication number](http://ebda.cnr.it/tablet/list) for specific references, or by [querying](http://ebda.cnr.it/tablet/search) the entire corpus for broader searches. The database also facilitates targeted searches for personal names, geographical names, and month names. These terms are flagged during data entry, allowing users to search within these specific categories. For example, entering "da-mu” in the PN category would return a list of all personal names containing that term.
+Additionally, the EbDA database incorporates an autocomplete feature that suggests potential search terms based on those already documented in the database. This feature helps refine searches and navigate the vast collection of sources.
+
+### Administrative Records
+
+-	Pettinato, Giovanni. 1980. *Testi amministrativi della biblioteca L.2769. Parte I*. Materiali Epigrafici di Ebla 2. Napoli.
+-	Edzard, Dietz Otto. 1981. *Verwaltungstexte verschiedenen Inhalts aus dem Archiv L.2769*. Archivi Reali di Ebla, Testi II. Roma.
+-	Archi, Alfonso, and Maria Giovanna Biga. 1982. *Testi amministrativi di vario contenuto (Archivio L.2769: TM.75.G.3000-4101)*. Archivi Reali di Ebla, Testi III. Roma.
+-	Biga, Maria Giovanna, and Lucio Milano. 1984. *Testi amministrativi: assegnazioni di tessuti (Archivio L. 2769)*. Archivi Reali di Ebla, Testi IV. Roma.
+-	Archi, Alfonso. 1988. *Testi amministrativi: registrazioni di metalli e tessuti (Archivio L.2769)*. Archivi Reali di Ebla, Testi VII. Roma.
+-	Mander, Pietro. 1990. *Administrative Texts of the Archive L.2769*. Materiali Epigrafici di Ebla 10. Roma.
+-	D’Agostino, Franco. 1996. *Testi amministrativi di Ebla: Archivio L.2769*. Materiali Epigrafici di Ebla 7. Roma.
+-	Waetzoldt, Hartmut. 2001. *Wirtschafts- und Verwaltungstexte aus Ebla Archiv L.2769*. Materiali Epigrafici di Ebla 12. Roma.
+-	Lahlouh, Mohammed, and Amalia Catagnoti. 2006. *Testi amministrativi di vario contenuto (Archivio L.2769: TM.75.G.4102-6050)*. Archivi Reali di Ebla, Testi XII. Roma.
+-	Pomponio, Francesco. 2008. *Testi amministrativi: assegnazioni mensili di tessuti, periodo di Arrugum (Archivio L.2769). Parte I*. Archivi Reali di Ebla, Testi XV/1. Roma.
+-	Pomponio, Francesco. 2013. *Testi amministrativi: assegnazioni mensili di tessuti, periodo di Arrugum (Archivio L.2769). Parte II*. Archivi Reali di Ebla, Testi XV/2. Roma.
+-	Archi, Alfonso. 2018. *Administrative Texts: Allotments of Clothing for the Palace Personnel (Archive L. 2769)*. Archivi Reali di Ebla, Testi XX. Wiesbaden.
+-	Samir, Imad. 2019. *Wirtschaftstexte: Monatliche Buchführung über Textilien aus Ibriums Amtszeit (Archiv L. 2769)*. Archivi Reali di Ebla, Testi XIX. Wiesbaden.
+-	Archi, Alfonso. 2023. *Annual Documents of Deliveries (mu-DU) to the Central Administration: Archive L.2769*. Archivi Reali di Ebla. Testi, XIV. Wiesbaden.
+-	Archi, Alfonso, and Gabriella Spada. 2023. *Annual Documents of the Metal Expenditures (è) from Minister Ibrium’s Period (Archive L. 2769)*. Archivi Reali di Ebla. Testi, XXI. Wiesbaden.
+
+### Lexical Texts
+
+-	Pettinato, Giovanni. 1981. *Testi lessicali monolingui della biblioteca L.2769*. Materiali Epigrafici di Ebla 3. Napoli.
+-	Pettinato, Giovanni. 1982. *Testi lessicali bilingui della Biblioteca L.2769. Parte I: Traslitterazione dei testi e ricostruzione del VE*. Materiali Epigrafici di Ebla 4. Napoli+.
+-	Picchioni, Sergio A. 1997. *Testi lessicali monolingui "éš-bar-kin~x~.”* Materiali Epigrafici di Ebla 15. Roma.
+2.3.3	Diplomatic and Others
+-	Edzard, Dietz Otto. 1984. *Hymnen, Beschwörungen und Verwandtes (aus dem Archiv L.2769)*. Archivi Reali di Ebla, Testi V. Roma.
+-	Fronzaroli, Pelio. 1993. *Testi rituali della regalità (L.2769)*. Archivi Reali di Ebla, Testi XI. Roma.
+-	Fronzaroli, Pelio. 2003. *Testi di cancelleria: I rapporti con le città (Archivio L.2769)*. Archivi Reali di Ebla, Testi XIII. Roma.
+-	Catagnoti, Amalia, and Pelio Fronzaroli. 2010. *Testi di cancelleria: il re e i funzionari (L.2769), Parte I*. Archivi Reali di Ebla, Testi XVI. Roma.
+-	Catagnoti, Amalia, and Pelio Fronzaroli. 2020. *Testi di cancelleria. Il re e i funzionari: Archivio L. 2875. Parte II*. Archivi Reali di Ebla, Testi, XVIII. Wiesbaden.
+2.3.4	Food allotment
+-	Milano, Lucio. 1990. *Testi amministrativi: assegnazioni di prodotti alimentari (Archivio L.2712 - Parte I)*. Archivi Reali di Ebla, Testi IX. Roma. (Reviews: Catagnoti 1997)
+
+## Excavation Reports
+
+**1964-1965**
+
+- Davico, A. et al., 1965. *Missione Archeologica Italiana in Siria. Rapporto preliminare della campagna 1964*, Roma: Università di Roma - Centro di Studi Semitici.
+- Matthiae, P., 1965. "Mission archéologique de l’Université de Rome à Tell Mardikh. Rapport sommaire sur la première campagne 1964”, *AAAS* 15, pp.83–100.
+- Castellino, G.R. et al., 1966. *Missione Archeologica Italiana in Siria. Rapporto preliminare della campagna 1965 (Tell Mardikh)*, Roma: Università di Roma - Istituto di Studi del vicino Oriente.
+- Matthiae, P., 1967. "Les fouilles à Tell Mardikh de la Mission archéologique en Syrie de l’Université de Rome (1964-65)”, *RSO*, 42, pp.19–26.
+- Matthiae, P., 1967. "Mission archéologique de l’Université de Rome à Tell Mardikh”, *AAAS* 17, pp.25–43.
+
+**1966**
+
+- Davico, A. et al., 1967. *Missione Archeologica Italiana in Siria. Rapporto preliminare della campagna 1966 (Tell Mardikh)*, Roma: Università di Roma - Istituto di Studi del vicino Oriente. 
+- Matthiae, P., 1967. "Mission archéologique de l’Université de Rome à Tell Mardikh, 1966”, *AAAS* 17, pp.25–43.
+
+**1967-1968**
+
+- Matthiae, P., 1971. "Tell Mardikh, Syria. Excavations of 1967 and 1968”, *Archaeology* 24, pp.55–61.
+1973-1975. https://www.jstor.org/stable/41674230
+- Matthiae, P., 1975. "La biblioteca reale di Ebla (2400-2250 a.C.). Risultati della Missione archeologica italiana in Siria, 1975”, *Rendiconti della Pontificia Accademia Romana di Archeologia* 48, pp.19–45.
+- Matthiae, P., 1978. "Preliminary Remarks on the Royal Palace of Ebla”, *SMS* 2, pp.13–40. https://undena.com/EL-UP/Matthiae_1978_Preliminary_Remarks_Royal_Palace_of_Ebla_-_SMS_2.2.pdf
+- Matthiae, P., 1979. *Ebla in the Period of the Amorite Dynasties and the Dynasty of Akkad: Recent Archaeological Discoveries at Tell Mardikh* (1975), *MANE* I/6, Malibu.
+
+**1976**
+
+- Matthiae, P. 1977. "Le palais royal protosyrien d’Ébla: nouvelles recherches archéologiques à Tell Mardihk en 1976”, *CRAIBL* 121, pp.148–174. https://www.persee.fr/doc/crai_0065-0536_1977_num_121_1_13336
+
+**1977**
+
+- Matthiae, P. 1978. "Recherches archéologiques à Ébla, 1977: le quartier administratif du palais royaI G”, *CRAIBL* 122, pp.204–236. https://www.persee.fr/doc/crai_0065-0536_1978_num_122_2_13462
+
+**1978**
+
+- Matthiae, P., 1980. "Fouilles à Tell Mardikh-Ebla, 1978: le Bâtiment Q et la nécropole princière du Bronze Moyen II”, *Akkadica* 17, pp.1–52.
+
+**1979**
+
+- Matthiae, P. 1980. "Campagne de fouilles à Ébla en 1979: les tombes princières et le palais de la ville basse à l’époque amorrhéenne”, *CRAIBL* 124, pp.94–118. https://www.persee.fr/doc/crai_0065-0536_1980_num_124_1_13689
+
+**1980**
+
+- Matthiae, P., 1982. "Fouilles à Tell Mardikh-Ebla, 1980: le Palais Occidental de l’époque amorrhéenne”, *Akkadica* 28, pp.7–12.
+
+**1981**
+
+- Matthiae, P. 1982. "Fouilles de 1981 à Tell Mardikh-Ébla et à Tell Touqan: nouvelles lumières sur l’architecture paléosyrienne du Bronze moyen I-II”, *CRAIBL* 126, pp.299–331. https://www.persee.fr/doc/crai_0065-0536_1982_num_126_2_13945
+
+
+**1982**
+- Matthiae, P. 1983. "Fouilles de Tell Mardikh-Ébla en 1982: nouvelles recherches sur l’architecture palatine d'Ébla, communication du 29 avril 1983”, *CRAIBL* 127, pp.530–554. https://www.persee.fr/doc/crai_0065-0536_1983_num_127_3_14081
+
+**1983-1986**
+
+- Matthiae, P. 1987. "Les dernières découvertes d’Ébla en 1983-1986”, *CRAIBL* 131, pp.135–161. https://www.persee.fr/doc/crai_0065-0536_1987_num_131_1_14468
+
+**1987-1989**
+
+- Matthiae, P. 1990. "Nouvelles fouilles à Ébla en 1987-1989”, *CRAIBL* 134, pp.384–431. https://www.persee.fr/doc/crai_0065-0536_1990_num_134_2_14858
+
+**1990-1992**
+
+- Matthiae, P. 1993. "L’aire sacrée d'Ishtar à Ebla: résultats des fouilles de 1990-1992”, *CRAIBL* 137, pp.613–662. https://www.persee.fr/doc/crai_0065-0536_1993_num_137_3_15244
+- Matthiae, P., 1992. "Tell Mardikh - Ebla (Siria), campagna di scavi 1991”, *Orient Express*, pp.3–5. 
+- Matthiae, P., 1993. "Tell Mardikh - Ebla (Siria), campagna di scavi 1992”, *Orient Express*, pp.18–19.
+
+**1993-1994**
+
+- Matthiae, P. 1995. "Fouilles à Ébla en 1993-1994: les palais de la ville basse nord”, *CRAIBL* 139, pp.651–681. https://www.persee.fr/doc/crai_0065-0536_1995_num_139_2_15506
+- Matthiae, P., 1994. "Tell Mardikh - Ebla (Siria), campagna di scavi 1993”, *Orient Express*, pp.35–38.
+- Matthiae, P., 1995. "Tell Mardikh - Ebla (Siria), campagna di scavi 1994”, *Orient Express*, pp.86–88.
+
+**1995-1997**
+
+- Matthiae, P. 1998. "Les fortifications de l’Ébla paléo-syrienne: fouilles à Tell Mardikh, 1995-1997”, *CRAIBL* 142, pp.557–588. https://www.persee.fr/doc/crai_0065-0536_1998_num_142_2_15888
+
+**1998-1999**
+
+- Matthiae, P. 2000. "Nouvelles fouilles à Ébla (1998-1999): forts et palais de l’enceinte urbaine”, *CRAIBL* 144, pp.567–610. https://www.persee.fr/doc/crai_0065-0536_2000_num_144_2_16143
+
+**2000-2001**
+
+- Matthiae, P. 2002. "Fouilles et restauration à Ébla en 2000-2001: le Palais occidental, la Résidence occidentale et l’urbanisme de la ville paléosyrienne”, *CRAIBL* 146, pp.531–574. https://www.persee.fr/doc/crai_0065-0536_2002_num_146_2_22448
+
+**2002-2003**
+
+- Matthiae, P. 2004. "Le palais méridional dans la ville basse d’Ebla paléosyrienne: fouilles à Tell Mardikh (2002-2003)”, *CRAIBL* 148, pp.301–346. https://www.persee.fr/doc/crai_0065-0536_2004_num_148_1_22708
+
+**2004-2005**
+
+- Matthiae, P. 2006. "Un grand temple de l’époque des Archives dans l’Ébla protosyrienne: Fouilles à Tell Mardikh 2004-2005”, *CRAIBL* 150, pp.447–493. https://www.persee.fr/doc/crai_0065-0536_2006_num_150_1_86960
+
+**2006-2007**
+
+- Matthiae, P. 2007. "Nouvelles fouilles à Ébla en 2006: le temple du Rocher et ses successeurs protosyriens et paléosyriens”, *CRAIBL* 151, pp.481–525. https://www.persee.fr/doc/crai_0065-0536_2007_num_151_1_92216
+- Matthiae, P., 2010. "Excavations at Ebla 2006-2007", In P. Matthiae, L. Nigro, & N. Marchetti, eds. *ICAANE* 6. pp. 3–26.
+
+**2007-2008**
+
+- Matthiae, P. 2009. "Temples et reines de l’Ébla protosyrienne: résultats des fouilles à Tell Mardikh en 2007 et 2008”, *CRAIBL* 153, pp.747–791. https://www.persee.fr/doc/crai_0065-0536_2009_num_153_2_92536
+
+## Reference Works, Repertoires, and Dictionaries
+
+### Dictionaries
+
+No dictionary of Eblaite is currently available. The project of the *Thesaurus Inscriptionum Eblaicarum* (*TIE*) started in 1995 came to a halt after its fourth volume in 2005 [@PettinatoDAgostino1995; @PettinatoDAgostino1996; @PettinatoDAgostino1998; @PettinatoSeminara2005]. Only volumes from letter A to D are presently available. The most easily accessible resource are the glossaries of the *ARET* volumes, with the twelfth [@LahlouhCatagnoti2006] being the most comprehensive although not necessarily the most recent. Note, however, that ARET XX [@Archi2018a], ARET XIV [@Archi2023], and ARET XXI [@ArchiSpada2023] have an English glossary, while ARET XIX [@Samir2019] has been published in German.
+
+### Grammar and Morphology
+
+The grammar published by Amalia Catagnoti [-@Catagnoti2012a] is a comprehensive overview of Eblaite language, including a detailed bibliography. For a brief introduction, see Catagnoti [-@Catagnoti2012a; -@Catagnoti2022] and Kogan and Krebernik [-@KoganKrebernik2021b].
+
+### Palaeographies and Sign Lists
+
+A palaeography for the administrative record has been published by Catagnoti [-@Catagnoti2013a]. A sign list based on lexical documents by Pietro Mander is included in *MEE* 3 [@Pettinato1981a] as an Appendix. Further works have been conducted by Paoletti [-@Paoletti2015; -@Paoletti2016] and Sallaberger [-@Sallaberger2001]. For a comprehensive sign list, Borger’s work [@Borger2004] is considered the best resource, particularly for understanding the archaic syllabic values of the signs.
+
+### Bibliographies
+
+The most complete bibliography is *The City of Ebla. A Complete Bibliography of Archaeological and Textual Remains* [@Scarpa2017a]. Published in 2017, the list is currently [updated regularly](http://ebda.cnr.it/biblio) on the Ebla Digital Archives Project. On previous works, see pp.14-15, ‘Previous Eblaite Bibliographies’. Most occurrences are also available in a [Zotero open library](https://www.zotero.org/groups/1079694/the-city-of-ebla/library).
+Another bibliography, published in 1984, is *The Tablets of Ebla. Concordance and Bibliography* [@BeldEtAl1984]: the book offers a list of all published tablets up to 1983 with concordances between inventory and museum numbers, as well as a related bibliographic index. Davidović [@Davidovic1987] offers a detailed description of the book’s content in her review.
+
+### Prosopographies
+
+The main prosopographical resource is the [Prosopography of Ebla](https://www.sagas.unifi.it/p359.html) project of the University of Florence: at present volumes B, G, and K have been published. The site includes several prosopographies, referred to:
+
+-	[Ibrium’s wives and female relatives](https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/dam-and-dumu-mi-ibrium.pdf);
+-	[Ibbi-zikir’s wives and female relatives](https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/dam-and-dumu-mi-yibbi-zikir.pdf);
+-	[wet-nurses, ga-du₈](https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/ga-du8.pdf);
+-	[acrobats, ḪUB₂(.KI)](https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/hub.pdf);
+-	[ib(-ib)](https://www.sagas.unifi.it/upload/sub/eblaweb/ib.pdf);
+-	[gatekeepers, KID₂.SAG](https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/kid-sag.pdf);
+-	[musical performers/singers, nar](https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/nar.pdf);
+-	[dancers, NE.DI](https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/ne-di.pdf);
+-	[smiths, simug](https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/simug.pdf);
+-	[collectors, ur₄](https://www.sagas.unifi.it/upload/sub/eblaweb/ur4.pdf).
+
+In addition, *ARES* I [@ArchiEtAl1988] includes prosopographies referred to the following social groups: royal sons [@Scarpa2021b; @Scarpa2021d], Ibrium’s sons, Ibbi-zikir’s sons, royal daughters, Ibrium’s daughters, Ibbi-zikir’s daughters, Ibrium’s brothers, court ladies [@Tonietti1989a; @Tonietti1990; @Scarpa2021a], Ibrium’s wives, Ibbi-zikir’s wives, judges, overseer of the kunga₂ and IGI.NITA [@Archi2020a], musicians [@Tonietti1988; @Tonietti1989b; @Tonietti1997a].
+
+###	Onomastics
+
+The first comprehensive study on onomastics is Pagan [-@Pagan1998]. However, subsequent publications overturned many of his interpretations. The [Prosopography of Ebla](https://www.sagas.unifi.it/p359.html) project includes interpretations for all PNs listed in the volumes. An important resource is also Krebernik’s work on personal names [-@Krebernik1988a].
+
+###	Repertoires
+
+Two geographical repertoires are available: *ARES* II [@ArchiEtAl1993] and RGTC 12/1 [@Bonechi1993a]. Both have been published in 1993; ARES I contains also references to unpublished documents. The [EbDA](http://ebda.cnr.it/) database offers a research filter for GNs.
+
+A repertoire for divine names is Pomponio and Xella [-@PomponioXella1997].
+
+### Varia
+
+Other useful resources include:
+-	Baldacci’s work [-@Baldacci1992] compiles all quoted passages from unpublished documents related to textiles up to 1993. Bonechi’s review [-@Bonechi1997e] provides further insights.
+-	Archi [-@Archi2002a, 187-199] offers an index of jewels and precious items associated with women’s marriages and funerals, potentially providing context for textile use.
+-	Pasquali [-@Pasquali2005a] provides a detailed account of tools, techniques, and objects used in textile production.
+-	Pasquali’s earlier work [-@Pasquali1997b] delves specifically into the terminology used for textiles within the administrative records.
+
+## Abbreviations
+
+|              |                                                                                                                                              |
+|--------------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| *A* or *ARET*         | *Archivi Reali di Ebla, Testi*                                                                                                               |
+| AAM          | Annual Account of Metals (CAM = RAM)                                                                                                                    |
+| Akk.         | Akkadian                                                                                                                                     |
+| Ar.         | ArruLUM                                                                                                                                     |
+| *ARED*       | *Archivi Reali di Ebla, Edizione digitale* (CD-ROM)                                                                                          |
+| *ARES*       | *Archivi Reali di Ebla, Studi*                                                                                                               |
+| *CAD*        | *Chicago Assyrian Dictionary*                                                                                                                |
+| *CAD* Supp.  | *Chicago Assyrian Dictionary* Supplementa                                                                                                    |
+| CAM          | Comptes rendus annuels de métaux ( = AAM = RAM) |
+| *DCCLT*      | *Digital Corpus of Cuneiform Lexical Texts*, <http://oracc.museum.upenn.edu/dcclt/>                                                          |
+| DN           | Divine Name                                      |
+| *DNWSI*      | Hoftijzer, J.; Jongelin, K. (1995), *Dictionary of the North-West Semitic Inscriptions*, Leiden                                               |
+| *DRS*        | Cohen, D. (1976–), *Dictionnaire des racines sémitiques*, La Haye                                                                            |
+| *DUL*^3^     | del Olmo Lete, G.; Sanmartín, J. (2015), *A Dictionary of the Ugaritic Language in the Alphabetic Tradition* (third edition), Leiden - Boston |
+| *EbDA*       | *Ebla Digital Archives*, <http://ebda.cnr.it>                                                                                                |
+| Ebl.         | Eblaite                                                                                                                                      |
+| EBK          | eš~2~-bar-kin~5~ unilingual lexical composition                                                                                              |
+| ED Lu~(2)~ A | Early Dynastic Lu~(2)~ A                                                                                                                     |
+| *ePSD*       | *Electronic Pennsylvania Sumerian Dictionary* <http://psd.museum.upenn.edu/nepsd-frame.html>^[Now only partially functional.]                |
+| *ePSD* 2     | *Electronic Pennsylvania Sumerian Dictionary 2* <http://oracc.museum.upenn.edu/epsd2/sux>                                                    |
+| ESL          | Ebla Sign List                                                                                                                               |
+| ERR          | Ebla Royal Ritual                                                                                                                            |
+| *EV*         | *Estratti del Vocabolario*                                                                                                                   |
+| GN           | Geographical Name                                    |
+| I.Z.         | Ibbi-zikir                                                                                                                                   |
+| Ib.          | Ibrium                                                                                                                                       |
+| *M* or *MEE*         | *Materiali Epigrafici di Ebla*, Napoli-Roma.                                                                                                 |
+| MAT          | Monthly Account of Textiles                                                                                                                  |
+| ND           | Nome di divinità (DN)                                  |
+| NG           | Nome di geografico (GN)                                    |
+| NP           | Nome di persona (NP)                                    |
+| obv.         | obverse (= recto)                                                                                                                               |
+| PN           | Personal Name                                     |
+| *PSD*        | *The Sumerian Dictionary of the University Museum of the University of Pennsylvania*, Phildelphia 1984—                                      |
+| r.           | recto (= obverse)                                                                                                                           |
+| RAM          | Resoconti Annuali di Metalli (AAM = CAM)                                                                                                    |
+| rev.         | reverse (= verso)                                                                                                                                 |
+| *RGTC*        | *Répertoire géographique des textes cunéiformes*, Wiesbaden                                                                     |
+| *RlA*        | *Reallexikon der Assyriologie und vorderasiatischen Archäologie*, Berlin                                                                     |
+| Sem.         | Semitic                                                                                                                                      |
+| Sum.         | Sumerian                                                                                                                                     |
+| *TIE*        | *Thesaurus Inscriptionum Eblaicarum*                                                                                                         |
+| Ug.          | Ugaritic                                                                                                                                     |
+| v.           | verso (= reverse)                                                                                                                             |
+| *VE*         | *Vocabolario di Ebla*                                                                                                                        |
+Table: (\#tab:abbreviation) Most common abbreviations in Eblaite studies.
+

@@ -1,17 +1,36 @@
 bookdown::gitbook:
   css: style.css
+  split_bib: false
+  toc_depth: 3
   config:
     toc:
+      collapse: section
+      scroll_highlight: true
       before: |
-        <li><a href="./">A Minimal Book Example</a></li>
+        <li><a href="./">The City of Ebla: A Primer</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/USERNAME/REPO/edit/BRANCH/%s
+        <li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" /></a></li>
+        <li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">© 2024 Erica Scarpa, CC BY 4.0.</a></li>
+        <li><a href="https://bookdown.org" target="_blank">Built with Bookdown and RStudio</a></li>
+    edit: https://github.com/erica-scarpa/the-city-of-ebla-primer/edit/main/%s
+    sharing:
+      facebook: false
+      github: true
+      twitter: false
+      linkedin: false
+      weibo: false
+      instapaper: false
+      vk: false
+      whatsapp: false
+    info: true
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
     in_header: preamble.tex
+    before_body: doc-prefix.tex
   latex_engine: xelatex
-  citation_package: natbib
   keep_tex: yes
+  url-color: blue
+  mainfont: EB Garamond
+  df_print: tibble
 bookdown::epub_book: default

@@ -12,3 +12,19 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+div.csl-entry{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+div.csl-block{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  font-weight: normal;
+}

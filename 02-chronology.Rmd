@@ -1,0 +1,102 @@
+# Chronology and Time-tracking
+
+## Dating the Age of the Archives
+
+The absolute chronology of Ebla during the Age of the Archives remains under debate, though most evidence points to the mid- to late-3rd millennium BCE. Archaeological and textual evidence generally places the period between approximately 2400 and 2250 BCE. Radiocarbon analyses on sixteen short-lived plant samples from Royal Palace G and Building P4 suggest the city’s destruction occurred sometime between 2367 and 2293 BCE [@CalcagnileEtAl2013]. However, the precise dating and its alignment with other contemporary events can vary depending on scholarly interpretations and the specific lines of evidence considered.
+
+The destruction of Ebla, a *terminus ante quem* for dating the Archives, remains a major point of debate. Scholars disagree on the perpetrators, with some attributing it to Sargon or Narām-Sîn of Akkad based on their claims of conquering Armanum and Ebla. Others propose Mari as the perpetrator. Durand [-@Durand2012] suggests a more specific scenario, identifying a Mari šakkanakku acting under Sargon’s orders.
+
+The interpretation that Ebla’s destruction was caused by Sargon relies on a series of royal inscriptions where Sargon claims that the god Dagan granted him Mari, Yarmuti, and Ebla. One of these inscriptions is contained in an Old Babylonian *Sammeltafeln*, of which at least two copies have survived. One is [Ni3200](https://cdli.mpiwg-berlin.mpg.de/artifacts/227510), and the second, [CBS 13972 + CBS 14545](https://www.penn.museum/collections/object/347461), was unearthed during the Babylonian Expedition to Nippur I-IV, which took place between 1888 and 1900. This tablet, reconstructed from numerous fragments, contains 22 texts together with brief captions. Originally attached to the monuments kept in the courtyard of the Ekur Temple in Nippur, the inscriptions were commissioned by the kings of Agade to commemorate their conquests. While one of these inscriptions mentions Ebla, it doesn’t necessarily confirm its destruction by Sargon. Narām-Sîn, Sargon’s grandson, also left several inscriptions boasting, for example, that he was “the mighty king of the four quarters, conqueror of Armānum and Ebla” on a [steatite vessel-shaped object](https://www.carmentis.be/eMP/eMuseumPlus?service=ExternalInterface&module=collection&objectId=87396&viewType=detailView), on a [metal bowl](https://cdli.mpiwg-berlin.mpg.de/artifacts/216630) (IMJ 74.49.99), and on a [pedestal](https://collections.louvre.fr/en/ark:/53355/cl010121772).
+
+Matthiae [-@Matthiae2008a, 96–97] explains this impasse, suggesting that the importance of Ebla and its destruction by Sargon made the city a well-known reference point in the Syrian territory for people living in Babylonia. Narām-Sîn technically defeated only Armānum, but mentioned Ebla in his inscription because its name was well-known due to his grandfather’s endeavors. In 2003, Archi and Biga offered new evidence substantiating Sargon’s direct involvement in the destruction of Ebla and added further insight into the topic [@ArchiBiga2003]. First, they observed that Kiš’s prominence among Babylonia’s most important cities suggests that Agade was not yet at the peak of its power. Kiš was certainly independent until Ebla’s final days. The peak of Ebla’s alliance with Kiš was reached when the wedding of the Eblaite princess Kešdut with its king was sealed.
+
+The scribes of the Archives did not consistently use year names to date their documents. Monthly accounts of textiles only mention the month, while only a few texts, like the income records (mu-DU), include a specific year reference. To establish a chronological sequence, Archi and Biga [-@ArchiBiga2003] cross-referenced the annual accounts of metal (AAM) with other sources. This timeline aligns with the mandated terms of the viziers, who assisted the king (see Figure \@ref(fig:chronology)).
+
+```{r chronology, echo=FALSE, fig.align='center', warning=FALSE, out.width="100%", fig.cap = "Chronological chart of Ebla’s kings and viziers. After Archi - Biga 2003 and Archi 2016."}
+library(knitr)    # For knitting document and include_graphics function
+library(ggplot2)  # For plotting
+library(png)  # For grabbing the dimensions of png files
+include_graphics('./assets/Chronology.png')
+```
+
+## Time-tracking
+
+### Month Names
+
+```{r month-names, echo=FALSE, results='asis', fig.cap = "List of months names in the standard and ‘new’ calendars at Ebla."}
+options(width = 30) 
+cat('
+| Standard calendar                                           |      Month       | ‘New’ calendar                            |
+|------------------------------------|:--------:|-------------------------|
+| iti *i-si*                                                  |        I         | iti nidba₂ <sup>dingir</sup>*a-dam-ma-um* |
+| iti *ig-za*                                                 |        II        | iti še-gur₁₀-ku₅                          |
+| iti *ig-za*-II                                              | II (intercalary) | iti še-gur₁₀-ku₅-II                       |
+| iti *za*-ʾ*a*₃-*tum*, *za*-ʾ*a*₃-*na-at*                    |       III        | iti <sup>dingir</sup>AMA-*ra*             |
+| iti *gi*-NI                                                 |        IV        | iti nidba₂ <sup>dingir</sup>*ga-mi-iš*    |
+| iti *ḫa-li*, *ḫa-li*-NI, *ḫa-li-du*, *ha-li-id*<sub>x</sub> |        V         | iti *be-li*                               |
+| iti *i-ri*₂-*sa*₂                                           |        VI        | iti nidba₂ <sup>dingir</sup>*aš-da*-BIL₂  |
+| iti *ga-sum*                                                |       VII        | iti NI-DU                                 |
+| iti ʾ*a*₅-*nun*, ʾ*a*₅-*nun-na*, ʾ*a*₅-*un-at*              |       VIII       | iti nidba₂ <sup>dingir</sup>ʾ*a*₃-*da*    |
+| iti *za-lul*                                                |        IX        | iti NI-*la-mu*, *ir-me*                   |
+| iti *i-ba*₄-*sa*, *i-ba*₄-*sa*₂                             |        X         | iti *ḫur-mu*, izi-gar                     |
+| iti MA×GANA₂*tenû*-sag                                      |        XI        | iti e₃                                    |
+| iti MA×GANA₂*tenû*-GUDU₄                                    |       XII        | iti kur₆   
+')
+```
+
+## Dating the Destruction of Ebla
+
+### Fragmentary Narām-Sîn inscription (IM 221139){#IM221139}
+
+An Old-Akkadian inscription was unearthed at [Tulūl al-Baqarāt](https://pleiades.stoa.org/places/698215287) by the Iraqi expedition during the campaigns of 2008–2010. Lippolis and Viano [-@LippolisViano2016] proposed identifying the site as the ancient religious city of Keš, where a sacred area dedicated to Ninhursaga was located. Archaeologists discovered this fragment at the base of the staircase leading to the temple terrace.
+
+This text can now be added to the collection of Old-Akkadian royal inscriptions that mention Narām-Sîn's campaign against Armānum and Ebla. The preserved portion of the text consists of a list of prisoners, including Armānum's king Rida-Hadda, several of his family members, his entourage, and some officials, Notably, the text provides a remarkable count of 70,805 prisoners of war.
+
+The second part of the surviving text matches RIME 2.1.4.27 esp.1, 2, and 3, corrisponding to a steatite vessel (MRAH O.710), a metal bowl (\@ref(IMJ744999)), and a pedestal (\@ref(AO3296)).
+
+Until recently, these four inscriptions supported the hypothesis that Ebla was destroyed by Narām-Sîn. However, doubts about this interpretation have emerged due to the discovery of the inscription discussed here. The surviving text comprises a list of war prisoners captured during the conflict against Armi, the city Narām-Sîn besieged and defeated, with no mention of Eblaite priisoners. Ebla might have been mentioned to provide geographical context to the event, reminiscent of Sargon's victory against Ebla a few years earlier. Additionally, as noted by Alkhafaji and Marchesi, Narām-Sîn's year name celebrating this victory only refers to the defeat of Armi [@AlkhafajiMarchesi2020]. This year name appears in RBC 2664, rev.4-9, and refers to the conquest of Armānum:[@Salgues2011] in 1 MU / *na-ra-am*-^d^EN.ZU / *ar-ma-num*^ki^ / SAG.⸢GEŠ.RA⸣ / BAD₃-[*su*] / *u-na*-[*qi*₂/*qe*₃-*ru*], 'the year Narām-Sîn conquered Armānum, destr[oyed its] wall.' The defeat of Armānum was certainly a major event during Narām-Sîn's reign, as it also appears in another year name celebrating the dedication of a sculpted image of the city to the god Enlil.^[[mu ^(d)^*na-ra-am*-^d^EN.ZU / e₂ ^d^en-li]l-la₂-se₃ / dul₃ *ar*^!^(*ri*)-*ma-num*₂^ki^ / a im-mi-ru-a, '[the year in which Narām-Sîn] dedicated a sculpted image of Armānum to [the temple] of [Enli]l' ([OIP 97, p.82 no.9](https://cdli.mpiwg-berlin.mpg.de/artifacts/216062)). See Alkhafaji and Marchesi [-@AlkhafajiMarchesi2020, 19] for the transliteration.]
+
+### Metal bowl with Narām-Sîn's inscription (IMJ 74.49.99){#IMJ744999}
+
+The Israel Museum acquired this metal bowl bearing an inscription commemorating Narām-Sîn's victory over Armānum and Ebla in 1974 from a private collection, previously obtained in Teheran. The inscription was published by Frayne [-@Frayne1993] as RIME 2.1.4.27, ex. 3, and later collated by Goodnick-Westenholz in 1998 [@GoodnickWestenholz1998]. No record of this object is currently available on the Museum's website.
+
+This bowl bears the same inscription as a steatite vessel (RIME 2.1.4.27, ex. 1), a pedestal (\@ref(AO3296)) discovered in Girsu, and an inscription recently discovered at Tulūl al-Baqarāt (\@ref(IM221139)). 
+
+### Perforated pedestal for a statue with Narām-Sîn's inscription (AO 3296){#AO3296}
+
+This rectangular plaque probably served as a support for a statue. The object bears an inscription mentioning Narām-Sîn, the conqueror of Armānum and Ebla, which is also found on a metal bowl (\@ref(IMJ744999)), a stone vessel, and a fragmentary inscription discovered at Tulūl al-Baqarat     (\@ref(IM221139)). [AO 3296](
+Perforated pedestal for a statue with Narām-Sîn's inscription (AO 3296)
+) ([CDLI 216629](https://cdli.mpiwg-berlin.mpg.de/artifacts/216629)) was discovered during the French expedition led by De Sarzec at Girsu/Telloh between 1895 and 1900. Currently, the object is part of the Musée du Louvre collection. The Museum's records suggests it is not on display.
+
+For a detailed discussion of the inscription, refer to the record for the steatite vessel with Narām-Sîn's inscription (MRAH O.710). In this particular exemplar the GN *eb-la*^ki^ is lost, but the inscription is almost certainly a copy of the three listed above.
+
+It is worth noting that the picture in Découvertes en Chaldée (1884) depicts two similar bases with different inscriptions [@deSarzec1912, plate 26bis]. Some editors have mistakenly confused the two museum numbers associated with these bases. The one being discussed here is [AO 3296](https://collections.louvre.fr/en/ark:/53355/cl010121772) (RIME 2.1.4.27, ex.2), which is a poorly preserved schist base and features three crescent-shaped axes engraved with the inscription mentioning Narām-Sîn as the conqueror of Armanum and Ebla. For additional information on the inventory numbers, see Molina [-@Molina2022, 165n11].
+
+The other base, [AO 3291](https://collections.louvre.fr/en/ark:/53355/cl010121771) (RIME 2.1.4.53), is very similar and better preserved but bears an inscription with the name of one of Narām-Sîn's sons and his granddaughter, without any engraved axes.
+
+### *Sammeltafeln* of the monuments of the kings of Agade (CBS 13972 + CBS 14545)
+
+An Old Babylonian summary tablet (*Sammeltafeln*), known as CBS 13972, was unearthed during the Babylonian Expedition to Nippur I-IV, which took place between 1888 and 1900, as documented in the Museum's archives. This tablet, reconstructed from numerous fragments, contains 22 texts along with brief captions. Originally, these inscriptions adorned the monuments within the courtyard of the Ekur Temple in Nippur. They were commissioned by the kings of Agade to commemorate their conquests.
+
+Notably, part of this tablet (CBS 14545), was first published by Arno Poebel in 1914 [@Poebel1914, 177-178, plate XX, no. 34 C and D]. Subsequently, in 1926, Leon Legrain published a joining fragment, CBS 13972.^[Legrain [-@Legrain1922], 12–27, [plate II](https://archive.org/details/royalinscription00legr_0/page/55/mode/1up?view=theater), plate XV ([handcopy](https://archive.org/details/royalinscription00legr_0/page/82/mode/1up); of CBS 13972 only), text no. 41. See the museum's [pictures.](https://www.penn.museum/collections/object_images.php?irn=347461) Legrain also published the fragments in the museum's [journal](https://www.penn.museum/sites/journal/9818/).] However, the tablet is typically referred to simply as CBS 13972. More comprehensive editions of the tablet were later provided by Gelb and Kienast in 1990 and Frayne in 1993, which incorporated all available fragments [@GelbKienast1990; @Frayne1993].
+
+Among the texts preserved in this anthology are three inscriptions that recount Sargon of Agade's successful conquests. According to the colophons, these texts (one written Sumerian, two in Akkadian) adorned some statues. The first inscription [@GelbKienast1990], Sargon C 2, Text A = RIME 2.1.1.11] commemorates Sargon's victories, with a particularly noteworthy passage in obv. V:17-31 emphasizing the divine grant of Mari, Iarmuti, and Ebla by the god Dagan. The Sumerian text reads as follows: 
+
+|      |                       |       |                               |
+|------|-----------------------|-------|-------------------------------|
+| V:17 | <sup>CBS\ 13972</sup>    | *šar-um*-GI                   |
+| V:18 | <sup>CBS\ 13972</sup>   | lugal                         |
+| V:19 | <sup>CBS\ 13972</sup> | du₈-du₈-li^ki^-a     |
+| V:20 | <sup>CBS\ 13972</sup>  | ^d^dagan-ra          |
+| V:21 | <sup>CBS\ 13972</sup>  | ki-a mu-na-za                 |
+| V:22 | <sup>CBS\ 13972</sup>   | šu₁₂ mu-na-ša₄                |
+| V:23 | <sup>CBS\ 13972</sup>   | kalam igi-nim                 |
+| V:24 | <sup>CBS\ 13972</sup>    | mu-na-sum₂                    |
+| V:25 | <sup>CBS\ 14545</sup>    | *ma-ri*₂^ki^         |
+| V:26 | <sup>CBS\ 14545</sup>  | *ia*₃-*ar-mu-ti*^ki^ |
+| V:27 | <sup>CBS\ 14545</sup>   | *eb-la*^ki^          |
+| V:28 | <sup>CBS\ 14545</sup>    | tir-                          |
+| V:29 | <sup>CBS\ 14545</sup>   | ^giš^erin            |
+| V:30 | <sup>CBS\ 14545</sup>    | hur-saĝ                       |
+| V:31 | <sup>CBS\ 14545</sup>    | ku₃-ga-še₃               |
+

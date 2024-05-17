@@ -1,0 +1,1032 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{EB Garamond}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={The City of Ebla: A Primer},
+  pdfauthor={Erica Scarpa},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{The City of Ebla: A Primer}
+\author{Erica Scarpa\footnote{Italian National Research Council - Institute of Heritage Science, \href{mailto:erica.scarpa@cnr.it}{\nolinkurl{erica.scarpa@cnr.it}} (\href{https://orcid.org/0000-0001-6250-304X}{ORCID 0000-0001-6250-304X}).}}
+\date{May 2024}
+
+\begin{document}
+\maketitle
+
+%\cleardoublepage\newpage\thispagestyle{empty}\null
+%\cleardoublepage\newpage\thispagestyle{empty}\null
+\cleardoublepage\newpage
+\thispagestyle{empty}
+\begin{center}
+\includegraphics{assets/dedication.pdf}
+\end{center}
+
+\setlength{\abovedisplayskip}{-5pt}
+\setlength{\abovedisplayshortskip}{-5pt}
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{about}{%
+\chapter*{About}\label{about}}
+\addcontentsline{toc}{chapter}{About}
+
+The ancient City of Ebla offers a window into the rich cultural and historical \emph{milieu} of ancient Syria. Through ongoing research efforts, scholars continue to unlock the secrets of this remarkable civilization. This primer serves as a foundational resource for those seeking a clear and engaging introduction to Ebla's history, culture, and the ongoing research that sheds light on its enduring legacy. This primer is available as an \href{https://erica-scarpa.github.io/the-city-of-ebla-primer/}{online book}, \href{https://erica-scarpa.github.io/the-city-of-ebla-primer/_main.pdf}{PDF}, or \href{https://erica-scarpa.github.io/the-city-of-ebla-primer/_main.epub}{ePub}.
+Please refer to this work as
+
+\begin{quote}
+Erica Scarpa. (2024). \emph{The City of Ebla: A Primer} (v.0.1.0). Zenodo. \url{https://doi.org/10.5281/zenodo.11200608}
+\end{quote}
+
+I'd like to express my gratitude to Pavla Rosenstein. Her initial request and guidance were instrumental in crafting an accessible introduction to Eblaite studies for the readers of Mar Shiprim. It was her invitation that sparked the idea for this ongoing project.
+
+This primer is available on Zenodo (\url{https://doi.org/10.5281/zenodo.11200608}) and will be expanded and updated as a permanent project in the future.
+
+\hypertarget{usage}{%
+\section*{Usage}\label{usage}}
+\addcontentsline{toc}{section}{Usage}
+
+The content of this document, including all the images, is licensed under \href{https://creativecommons.org/licenses/by-sa/4.0/}{CC-BY 4.0}. This means you are free to \textbf{share} (copy and redistribute) the material as well as \textbf{adapt} (remix, transform, and build upon) the material for any purpose provided you give appropriate credit, provide a link to the license, and indicate if changes were made.
+
+Did you notice something wrong? \href{mailto:erica.scarpa@cnr.it}{Let me know}.
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+\hypertarget{what-sparked-the-ebla-excavations}{%
+\section{What Sparked the Ebla Excavations?}\label{what-sparked-the-ebla-excavations}}
+
+The exploration of the civilization that thrived in the ancient city of Ebla (mod. \href{https://pleiades.stoa.org/places/869702586}{Tell Mardikh}) represents a relatively recent area of study. Despite its size, spanning 60 hectares, the site remained largely overlooked until University of Rome `La Sapienza' archaeologist Paolo Matthiae started investigations in 1964. Matthiae's interest was sparked during a visit to the Aleppo Museum, where he encountered a stone basin, unearthed at Tell Mardikh in the late 1950s by local farmers (\protect\hyperlink{ref-Matthiae1995a}{Matthiae, 1995, pp. 42--43}). While archaeological investigations at the site started in 1964, it wasn't until 1968 that Matthiae and his colleagues were officially able to identify the site as the ancient city of Ebla.
+Led by Matthiae and co-directed by Frances Pinnock, the Italian Archaeological Expedition to Syria (MAIS) conducted uninterrupted excavations at the tell from 1964 to 2010. Unfortunately, archaeological research was forced to stop due to the political crisis that began in Syria in spring 2011. A detailed look at the field operations conducted between 1964 and 2010 can be found in Matthiae (\protect\hyperlink{ref-Matthiae2013d}{2013}) and Matthiae (\protect\hyperlink{ref-Matthiae2014d}{2014/2015}).
+
+\hypertarget{the-archives-size-location-and-language}{%
+\section{The Archives -- Size, Location and Language}\label{the-archives-size-location-and-language}}
+
+The Ebla Royal Archives represent the oldest organized collection of documents in the history of the ancient Near East found \emph{in situ}. Dated to around 2400 BCE, they consist primarily of the Great Archive (L.2769) and several smaller rooms. However, a crucial distinction must be drawn between two interpretations of the term ``archive.'' In the first sense, an archive signifies a designated physical space for document storage, such as a room equipped with shelves. The Great Archive (L.2769) and the Small Archive (L.2712) demonstrably fall under this definition due to the presence of such features (\protect\hyperlink{ref-Matthiae1986c}{Matthiae, 1986}; \protect\hyperlink{ref-Peyronel2006}{Peyronel, 2006}). The second interpretation encompasses any organized collection of documents, irrespective of their physical location. Most findings at Ebla cannot be explicitly defined as archives in the first interpretation as outlined above, so epigraphic finds have been divided between primary (archival rooms; spaces for short-term consultation) and secondary (tablets scattered in rooms for unclear purposes), as outlined Matthiae (\protect\hyperlink{ref-Matthiae1986c}{1986, pp. 57--58}) and Peyronel (\protect\hyperlink{ref-Peyronel2006}{2006, pp. 260--261}).
+The documents are written in an archaic northern Semitic language, which has been studied extensively since its discovery in 1974 (\protect\hyperlink{ref-Catagnoti2012a}{Catagnoti, 2012}; \protect\hyperlink{ref-DAgostino1990a}{D'Agostino, 1990}; \protect\hyperlink{ref-HuehnergardWoods2008}{Huehnergard \& Woods, 2008}; \protect\hyperlink{ref-Krebernik1996b}{Krebernik, 1996}; \protect\hyperlink{ref-Tonietti2013a}{Tonietti, 2013}, \protect\hyperlink{ref-Tonietti2018b}{2018}), although full understanding of the grammar and morphology is a recent development. Additionally, the administrative terminology heavily relies on Sumerian logograms: while Sumerian was most likely not spoken in the region, scribes adopted its writing system. This combination of languages, with its inherent lexical shifts, creates challenges in interpreting the texts.
+
+\hypertarget{the-discoveries-key-artefacts-and-texts}{%
+\subsection{The Discoveries -- Key Artefacts and Texts}\label{the-discoveries-key-artefacts-and-texts}}
+
+The first cuneiform tablets were found in 1974 within Room L.2586 at the bottom of a jar, situated north of the Monumental stairway in the so-called Royal Palace G (\protect\hyperlink{ref-Archi2019d}{Archi, 2019, p. 6}; \protect\hyperlink{ref-Matthiae2008a}{Matthiae, 2008, p. 64}). This initial find consisted of 42 lenticular tablets, primarily documenting silver and gold objects. Notably, the list of Ebla's rulers (TM.74.G.120, published in \protect\hyperlink{ref-Archi1988b}{Archi, 1988, p. 213}) belongs to this group. In 1975, excavations unearthed two significant archives: the Great Archive (L.2769) and the Small Archive (L.2712). News of the discovery garnered international attention (\href{https://archivio.unita.news/assets/main/1976/03/16/page_003.pdf}{1}, \href{https://www.nytimes.com/1976/10/25/archives/discovey-of-an-ancient-city-in-syria-called-sensational.html}{2}) and revolutionized our understanding of the ancient Near East. The Small Archive L.2712, found in August 1975, contained roughly 1,000 excavation numbers representing an estimated 211 complete tablets. These documents, primarily recording food rations, date to the final months before Ebla's destruction. While Milano published 115 tablets (\protect\hyperlink{ref-Milano1990a}{Milano, 1990}), approximately 170 remain unpublished.
+
+Less than a month later, a significant discovery of over 15,000 tablets, fragments, and chips occurred within Room L.2769. Estimates suggest that the Great Archive originally housed between 4,000 and 5,000 tablets (\protect\hyperlink{ref-Bonechi2013}{Bonechi, 2013, p. 248}; \protect\hyperlink{ref-Matthiae2008a}{Matthiae, 2008, p. 80}). These materials primarily comprised administrative records concerning monthly textile distributions and annual metal accounts, alongside lexical texts, literary compositions, and approximately 60 diplomatic documents (for an assessment, see \protect\hyperlink{ref-Scarpa2023}{Scarpa, 2023, pp. 11--14}).
+A small number of additional fragments were recovered from Room L.2769 in 1976. The same year also saw the discovery of roughly 100 documents (reconstructed from 655 fragments) within Vestibule L.2875, adjoining the Great Archive. Notably, twenty of these documents, primarily letters, have been published by Catagnoti and Fronzaroli (\protect\hyperlink{ref-CatagnotiFronzaroli2020}{2020}).
+The excavation of the Trapezoidal Archive (L.2764) took place in 1976, yielding approximately 600 excavation numbers. These documents primarily concern livestock deliveries and remain unpublished. Finally, 1976 also saw the discovery of 22 documents found on burnt wooden planks within the center of the Audience Court L.2752. All these documents have been published by Sollberger (\protect\hyperlink{ref-Sollberger1986}{1986}) and re-edited by Pettinato (\protect\hyperlink{ref-Pettinato1996a}{1996}).
+
+Occasional discoveries occurred from 2004 to 2010, culminating in the finding of the final group of tablets in 2004 within storeroom L.8496 (\protect\hyperlink{ref-Archi2015b}{Archi, 2015}).
+
+For a plan of the find spots within the site, see Porter (\protect\hyperlink{ref-Porter2012}{2012, p. 200}).
+
+\hypertarget{good-practices-for-quoting-sources-and-transliteration-conventions}{%
+\section{Good Practices for Quoting Sources and Transliteration Conventions}\label{good-practices-for-quoting-sources-and-transliteration-conventions}}
+
+Due to circumstances of their discovery, the Ebla tablets exhibit unique characteristics when it comes to publication, citation, and joining. A key factor is that all tablets were found at Ebla, leading to the general assumption of local production. However, some diplomatic documents hint at local copies of foreign texts, suggesting a more nuanced picture (\protect\hyperlink{ref-Bonechi2016k}{Bonechi, 2016, pp. 6--7}). It must be noted that archaeologists adopted a single \textbf{excavation number} system for all finds at Ebla. This system, exemplified by TM.75.G.12345 (Tell Mardikh, year 75, sector G, object number 12345), does not differentiate between tablets, fragments, or other artifacts. Consequently, the excavation number alone offers no clue about the object's nature (\protect\hyperlink{ref-Scarpa2023}{Scarpa, 2023, p. 20}). Each complete tablet or single fragment present an excavation number: the Ebla sources are most often quoted by their \textbf{publication number} (e.g \href{http://ebda.cnr.it/tablet/view/2}{\emph{ARET} I, 1}), but good practice would be to also refer to the excavation number (e.g \emph{ARET} I, 1 = TM.75.G.2525). This is recommended practice, since the publication number does not provide information on potential joins (e.g, \href{http://ebda.cnr.it/tablet/view/3096}{\emph{ARET} XX 7} = TM.75.G.1731+TM.75.G.2498).
+
+Sources cited only by excavation number are likely \textbf{unpublished}. For example, TM.75.G.2396 (studied by Pettinato and D'Agostino \protect\hyperlink{ref-PettinatoDAgostino1994}{1994}) was later published as \href{http://ebda.cnr.it/tablet/view/2856}{ARET XIII 7} by Pelio Fronzaroli (\protect\hyperlink{ref-Fronzaroli2003a}{2003}). Therefore, when citing unpublished sources, it is advisable to verify their current publication status. This verification can be readily accomplished by consulting the excavation number within the ``Concordances'' sub-section of the \href{http://ebda.cnr.it/}{EbDA database} (see below).
+
+During the excavation post-processing phase or subsequent years, dozens of fragments have been successfully joined. However, the sheer volume of discovered materials necessitates ongoing review, as published incomplete tablets may subsequently be found to join with additional fragments. This is the case of \href{http://ebda.cnr.it/tablet/view/3}{\emph{ARET} I 2} = TM.75.G.10016 + \href{http://ebda.cnr.it/tablet/view/1109}{\emph{ARET} IV 23} = TM.75.G.1886 (\protect\hyperlink{ref-Bonechi2020c}{Bonechi, 2020}). In addition, several joins have been identified based on linguistic features, rather than on the observation of physical features (\protect\hyperlink{ref-Bonechi2023b}{Bonechi, 2023}). For typologies of different joins that can be found in Ebla sources, see Di Filippo, Maiocchi and Scarpa (\protect\hyperlink{ref-DiFilippoEtAl2023a}{2023, pp. 139--142}).
+
+\hypertarget{editorial-conventions}{%
+\section{Editorial conventions}\label{editorial-conventions}}
+
+Editorial conventions employed in editions may vary depending on the scholar, with specific notations reflecting the state of document preservation. Broken text is typically indicated by square brackets, {[}\ldots{]}. In lacunae, the reading of certain signs can be confidently proposed based on parallels. For instance, in the sequence {[}x x \emph{BU}{]}-\emph{DI} {[}N{]} ku₃:bar₆, at least two signs (marked `x') likely preceded the term \emph{BU-DI} (``toggle-pin''), while a numeral ({[}N{]}) denoted its value in silver shekels (ku₃:bar₆). Half upper brackets signify damaged but still legible signs, as exemplified by \textsuperscript{dingir}KU-\emph{ra}-⸢\emph{ma}⸣-\emph{i-da} (a personal name). Notably, the Materiali Epigrafici di Ebla series occasionally utilizes parentheses `()' to denote signs illegible in photographs, as all documents within these volumes were edited based on photographic reproductions rather than the original artifacts.
+
+\hypertarget{transliteration}{%
+\subsection{Transliteration}\label{transliteration}}
+
+Note that the following transliteration conventions are standard in the field:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Eblaite} is typically denoted in lowercase italics, such as PN \emph{i-bi}₂-\emph{zi-kir} (Ibbi-zikir), GN \emph{ma-ri}₂\textsuperscript{ki} (Mari).
+\item
+  \textbf{Semitograms}, also referred to as Akkadograms or Eblaitograms (\protect\hyperlink{ref-Conti1993}{Conti, 1993, pp. 106--107}), are transliterated in uppercase italics, for example, \emph{MA-LIK-TUM} (``queen''), \emph{GU}₂-\emph{BAR} (\emph{kubārum}, a unit of measure for arids), or \emph{LI-IM} (\emph{liʾmum}, 1,000). Although this convention has not been universally adopted in text editions, some scholars use it in their writings.
+\item
+  \textbf{Sumerian} is represented in lowercase, like šu-mu-tag₄ (``to deliver'') or GN kiš\textsuperscript{ki} (Kiš).
+\item
+  Signs of \textbf{uncertain reading} or instances of unusual spelling are indicated in uppercase, e.g., DU.DU or \textsuperscript{dingir}ʾ\emph{a}₃(NI)-da-balx(KUL), or small caps, e.g.~{giš}-geštug-la₂. Occasionally, uncertain signs likely bearing a Semitic reading are transcribed in uppercase italics; Pomponio (\protect\hyperlink{ref-Pomponio2008a}{2008}, \protect\hyperlink{ref-Pomponio2013a}{2013}) adopts this convention, as seen in PN \emph{EN-zi-da-ar}, where EN, according to him, carries a syllabic value. However, this may potentially lead to confusion with Semitograms.
+\item
+  \textbf{Phonetic transcriptions} are represented in lowercase within slashes, such as /battāqu daynim/, the phonetic transcription of the entry 1327' of the bilingual lexical list known as \emph{Vocabolario di Ebla} (di-ku₅ / \emph{ba-da-qu}₂ \emph{da-ne-u}{[}\emph{m}{]}, ``to decide a litigation'').
+\end{itemize}
+
+\hypertarget{published-editions}{%
+\section{Published Editions}\label{published-editions}}
+
+The primary source for studying Ebla comes from two publication series:
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Archivi Reali di Ebla, Testi} (\emph{ARET}), Rome: This series, currently containing nineteen volumes, publishes edited texts from the Ebla royal archives.
+\item
+  \emph{Materiali Epigrafici di Ebla} (\emph{MEE}), Rome and Naples: active from 1979 to 2001, this series published nine volumes of Eblaite texts.
+\end{itemize}
+
+There is minimal overlap between the two series. Notably, most lexical documents, while originally published in \emph{MEE}, are planned for updated editions within the \emph{ARET} series (\protect\hyperlink{ref-Archi2022b}{Archi, 2022}). Several sources have been published in articles and conference proceedings, such as TM.75.G.1679 (\protect\hyperlink{ref-Biga2018b}{Biga, 2018, pp. 65--67}).
+The \href{http://ebda.cnr.it/}{Ebla Digital Archives Project} (EbDA), launched in 2007, offers a comprehensive digital resource for researchers studying the ancient city of Ebla. It includes digital editions of most of the sources published up to date (\protect\hyperlink{ref-DiFilippoEtAl2018}{Di Filippo et al., 2018}). Users can explore the transliterations in two ways: by \href{http://ebda.cnr.it/tablet/list}{publication number} for specific references, or by \href{http://ebda.cnr.it/tablet/search}{querying} the entire corpus for broader searches. The database also facilitates targeted searches for personal names, geographical names, and month names. These terms are flagged during data entry, allowing users to search within these specific categories. For example, entering ``da-mu'' in the PN category would return a list of all personal names containing that term.
+Additionally, the EbDA database incorporates an autocomplete feature that suggests potential search terms based on those already documented in the database. This feature helps refine searches and navigate the vast collection of sources.
+
+\hypertarget{administrative-records}{%
+\subsection{Administrative Records}\label{administrative-records}}
+
+\begin{itemize}
+\tightlist
+\item
+  Pettinato, Giovanni. 1980. \emph{Testi amministrativi della biblioteca L.2769. Parte I}. Materiali Epigrafici di Ebla 2. Napoli.
+\item
+  Edzard, Dietz Otto. 1981. \emph{Verwaltungstexte verschiedenen Inhalts aus dem Archiv L.2769}. Archivi Reali di Ebla, Testi II. Roma.
+\item
+  Archi, Alfonso, and Maria Giovanna Biga. 1982. \emph{Testi amministrativi di vario contenuto (Archivio L.2769: TM.75.G.3000-4101)}. Archivi Reali di Ebla, Testi III. Roma.
+\item
+  Biga, Maria Giovanna, and Lucio Milano. 1984. \emph{Testi amministrativi: assegnazioni di tessuti (Archivio L. 2769)}. Archivi Reali di Ebla, Testi IV. Roma.
+\item
+  Archi, Alfonso. 1988. \emph{Testi amministrativi: registrazioni di metalli e tessuti (Archivio L.2769)}. Archivi Reali di Ebla, Testi VII. Roma.
+\item
+  Mander, Pietro. 1990. \emph{Administrative Texts of the Archive L.2769}. Materiali Epigrafici di Ebla 10. Roma.
+\item
+  D'Agostino, Franco. 1996. \emph{Testi amministrativi di Ebla: Archivio L.2769}. Materiali Epigrafici di Ebla 7. Roma.
+\item
+  Waetzoldt, Hartmut. 2001. \emph{Wirtschafts- und Verwaltungstexte aus Ebla Archiv L.2769}. Materiali Epigrafici di Ebla 12. Roma.
+\item
+  Lahlouh, Mohammed, and Amalia Catagnoti. 2006. \emph{Testi amministrativi di vario contenuto (Archivio L.2769: TM.75.G.4102-6050)}. Archivi Reali di Ebla, Testi XII. Roma.
+\item
+  Pomponio, Francesco. 2008. \emph{Testi amministrativi: assegnazioni mensili di tessuti, periodo di Arrugum (Archivio L.2769). Parte I}. Archivi Reali di Ebla, Testi XV/1. Roma.
+\item
+  Pomponio, Francesco. 2013. \emph{Testi amministrativi: assegnazioni mensili di tessuti, periodo di Arrugum (Archivio L.2769). Parte II}. Archivi Reali di Ebla, Testi XV/2. Roma.
+\item
+  Archi, Alfonso. 2018. \emph{Administrative Texts: Allotments of Clothing for the Palace Personnel (Archive L. 2769)}. Archivi Reali di Ebla, Testi XX. Wiesbaden.
+\item
+  Samir, Imad. 2019. \emph{Wirtschaftstexte: Monatliche Buchführung über Textilien aus Ibriums Amtszeit (Archiv L. 2769)}. Archivi Reali di Ebla, Testi XIX. Wiesbaden.
+\item
+  Archi, Alfonso. 2023. \emph{Annual Documents of Deliveries (mu-DU) to the Central Administration: Archive L.2769}. Archivi Reali di Ebla. Testi, XIV. Wiesbaden.
+\item
+  Archi, Alfonso, and Gabriella Spada. 2023. \emph{Annual Documents of the Metal Expenditures (è) from Minister Ibrium's Period (Archive L. 2769)}. Archivi Reali di Ebla. Testi, XXI. Wiesbaden.
+\end{itemize}
+
+\hypertarget{lexical-texts}{%
+\subsection{Lexical Texts}\label{lexical-texts}}
+
+\begin{itemize}
+\tightlist
+\item
+  Pettinato, Giovanni. 1981. \emph{Testi lessicali monolingui della biblioteca L.2769}. Materiali Epigrafici di Ebla 3. Napoli.
+\item
+  Pettinato, Giovanni. 1982. \emph{Testi lessicali bilingui della Biblioteca L.2769. Parte I: Traslitterazione dei testi e ricostruzione del VE}. Materiali Epigrafici di Ebla 4. Napoli+.
+\item
+  Picchioni, Sergio A. 1997. \emph{Testi lessicali monolingui ``éš-bar-kin\textsubscript{x}.''} Materiali Epigrafici di Ebla 15. Roma.
+  2.3.3 Diplomatic and Others
+\item
+  Edzard, Dietz Otto. 1984. \emph{Hymnen, Beschwörungen und Verwandtes (aus dem Archiv L.2769)}. Archivi Reali di Ebla, Testi V. Roma.
+\item
+  Fronzaroli, Pelio. 1993. \emph{Testi rituali della regalità (L.2769)}. Archivi Reali di Ebla, Testi XI. Roma.
+\item
+  Fronzaroli, Pelio. 2003. \emph{Testi di cancelleria: I rapporti con le città (Archivio L.2769)}. Archivi Reali di Ebla, Testi XIII. Roma.
+\item
+  Catagnoti, Amalia, and Pelio Fronzaroli. 2010. \emph{Testi di cancelleria: il re e i funzionari (L.2769), Parte I}. Archivi Reali di Ebla, Testi XVI. Roma.
+\item
+  Catagnoti, Amalia, and Pelio Fronzaroli. 2020. \emph{Testi di cancelleria. Il re e i funzionari: Archivio L. 2875. Parte II}. Archivi Reali di Ebla, Testi, XVIII. Wiesbaden.
+  2.3.4 Food allotment
+\item
+  Milano, Lucio. 1990. \emph{Testi amministrativi: assegnazioni di prodotti alimentari (Archivio L.2712 - Parte I)}. Archivi Reali di Ebla, Testi IX. Roma. (Reviews: Catagnoti 1997)
+\end{itemize}
+
+\hypertarget{excavation-reports}{%
+\section{Excavation Reports}\label{excavation-reports}}
+
+\textbf{1964-1965}
+
+\begin{itemize}
+\tightlist
+\item
+  Davico, A. et al., 1965. \emph{Missione Archeologica Italiana in Siria. Rapporto preliminare della campagna 1964}, Roma: Università di Roma - Centro di Studi Semitici.
+\item
+  Matthiae, P., 1965. ``Mission archéologique de l'Université de Rome à Tell Mardikh. Rapport sommaire sur la première campagne 1964'', \emph{AAAS} 15, pp.83--100.
+\item
+  Castellino, G.R. et al., 1966. \emph{Missione Archeologica Italiana in Siria. Rapporto preliminare della campagna 1965 (Tell Mardikh)}, Roma: Università di Roma - Istituto di Studi del vicino Oriente.
+\item
+  Matthiae, P., 1967. ``Les fouilles à Tell Mardikh de la Mission archéologique en Syrie de l'Université de Rome (1964-65)'', \emph{RSO}, 42, pp.19--26.
+\item
+  Matthiae, P., 1967. ``Mission archéologique de l'Université de Rome à Tell Mardikh'', \emph{AAAS} 17, pp.25--43.
+\end{itemize}
+
+\textbf{1966}
+
+\begin{itemize}
+\tightlist
+\item
+  Davico, A. et al., 1967. \emph{Missione Archeologica Italiana in Siria. Rapporto preliminare della campagna 1966 (Tell Mardikh)}, Roma: Università di Roma - Istituto di Studi del vicino Oriente.
+\item
+  Matthiae, P., 1967. ``Mission archéologique de l'Université de Rome à Tell Mardikh, 1966'', \emph{AAAS} 17, pp.25--43.
+\end{itemize}
+
+\textbf{1967-1968}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P., 1971. ``Tell Mardikh, Syria. Excavations of 1967 and 1968'', \emph{Archaeology} 24, pp.55--61.
+  1973-1975. \url{https://www.jstor.org/stable/41674230}
+\item
+  Matthiae, P., 1975. ``La biblioteca reale di Ebla (2400-2250 a.C.). Risultati della Missione archeologica italiana in Siria, 1975'', \emph{Rendiconti della Pontificia Accademia Romana di Archeologia} 48, pp.19--45.
+\item
+  Matthiae, P., 1978. ``Preliminary Remarks on the Royal Palace of Ebla'', \emph{SMS} 2, pp.13--40. \url{https://undena.com/EL-UP/Matthiae_1978_Preliminary_Remarks_Royal_Palace_of_Ebla_-_SMS_2.2.pdf}
+\item
+  Matthiae, P., 1979. \emph{Ebla in the Period of the Amorite Dynasties and the Dynasty of Akkad: Recent Archaeological Discoveries at Tell Mardikh} (1975), \emph{MANE} I/6, Malibu.
+\end{itemize}
+
+\textbf{1976}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1977. ``Le palais royal protosyrien d'Ébla: nouvelles recherches archéologiques à Tell Mardihk en 1976'', \emph{CRAIBL} 121, pp.148--174. \url{https://www.persee.fr/doc/crai_0065-0536_1977_num_121_1_13336}
+\end{itemize}
+
+\textbf{1977}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1978. ``Recherches archéologiques à Ébla, 1977: le quartier administratif du palais royaI G'', \emph{CRAIBL} 122, pp.204--236. \url{https://www.persee.fr/doc/crai_0065-0536_1978_num_122_2_13462}
+\end{itemize}
+
+\textbf{1978}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P., 1980. ``Fouilles à Tell Mardikh-Ebla, 1978: le Bâtiment Q et la nécropole princière du Bronze Moyen II'', \emph{Akkadica} 17, pp.1--52.
+\end{itemize}
+
+\textbf{1979}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1980. ``Campagne de fouilles à Ébla en 1979: les tombes princières et le palais de la ville basse à l'époque amorrhéenne'', \emph{CRAIBL} 124, pp.94--118. \url{https://www.persee.fr/doc/crai_0065-0536_1980_num_124_1_13689}
+\end{itemize}
+
+\textbf{1980}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P., 1982. ``Fouilles à Tell Mardikh-Ebla, 1980: le Palais Occidental de l'époque amorrhéenne'', \emph{Akkadica} 28, pp.7--12.
+\end{itemize}
+
+\textbf{1981}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1982. ``Fouilles de 1981 à Tell Mardikh-Ébla et à Tell Touqan: nouvelles lumières sur l'architecture paléosyrienne du Bronze moyen I-II'', \emph{CRAIBL} 126, pp.299--331. \url{https://www.persee.fr/doc/crai_0065-0536_1982_num_126_2_13945}
+\end{itemize}
+
+\textbf{1982}
+- Matthiae, P. 1983. ``Fouilles de Tell Mardikh-Ébla en 1982: nouvelles recherches sur l'architecture palatine d'Ébla, communication du 29 avril 1983'', \emph{CRAIBL} 127, pp.530--554. \url{https://www.persee.fr/doc/crai_0065-0536_1983_num_127_3_14081}
+
+\textbf{1983-1986}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1987. ``Les dernières découvertes d'Ébla en 1983-1986'', \emph{CRAIBL} 131, pp.135--161. \url{https://www.persee.fr/doc/crai_0065-0536_1987_num_131_1_14468}
+\end{itemize}
+
+\textbf{1987-1989}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1990. ``Nouvelles fouilles à Ébla en 1987-1989'', \emph{CRAIBL} 134, pp.384--431. \url{https://www.persee.fr/doc/crai_0065-0536_1990_num_134_2_14858}
+\end{itemize}
+
+\textbf{1990-1992}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1993. ``L'aire sacrée d'Ishtar à Ebla: résultats des fouilles de 1990-1992'', \emph{CRAIBL} 137, pp.613--662. \url{https://www.persee.fr/doc/crai_0065-0536_1993_num_137_3_15244}
+\item
+  Matthiae, P., 1992. ``Tell Mardikh - Ebla (Siria), campagna di scavi 1991'', \emph{Orient Express}, pp.3--5.
+\item
+  Matthiae, P., 1993. ``Tell Mardikh - Ebla (Siria), campagna di scavi 1992'', \emph{Orient Express}, pp.18--19.
+\end{itemize}
+
+\textbf{1993-1994}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1995. ``Fouilles à Ébla en 1993-1994: les palais de la ville basse nord'', \emph{CRAIBL} 139, pp.651--681. \url{https://www.persee.fr/doc/crai_0065-0536_1995_num_139_2_15506}
+\item
+  Matthiae, P., 1994. ``Tell Mardikh - Ebla (Siria), campagna di scavi 1993'', \emph{Orient Express}, pp.35--38.
+\item
+  Matthiae, P., 1995. ``Tell Mardikh - Ebla (Siria), campagna di scavi 1994'', \emph{Orient Express}, pp.86--88.
+\end{itemize}
+
+\textbf{1995-1997}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 1998. ``Les fortifications de l'Ébla paléo-syrienne: fouilles à Tell Mardikh, 1995-1997'', \emph{CRAIBL} 142, pp.557--588. \url{https://www.persee.fr/doc/crai_0065-0536_1998_num_142_2_15888}
+\end{itemize}
+
+\textbf{1998-1999}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 2000. ``Nouvelles fouilles à Ébla (1998-1999): forts et palais de l'enceinte urbaine'', \emph{CRAIBL} 144, pp.567--610. \url{https://www.persee.fr/doc/crai_0065-0536_2000_num_144_2_16143}
+\end{itemize}
+
+\textbf{2000-2001}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 2002. ``Fouilles et restauration à Ébla en 2000-2001: le Palais occidental, la Résidence occidentale et l'urbanisme de la ville paléosyrienne'', \emph{CRAIBL} 146, pp.531--574. \url{https://www.persee.fr/doc/crai_0065-0536_2002_num_146_2_22448}
+\end{itemize}
+
+\textbf{2002-2003}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 2004. ``Le palais méridional dans la ville basse d'Ebla paléosyrienne: fouilles à Tell Mardikh (2002-2003)'', \emph{CRAIBL} 148, pp.301--346. \url{https://www.persee.fr/doc/crai_0065-0536_2004_num_148_1_22708}
+\end{itemize}
+
+\textbf{2004-2005}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 2006. ``Un grand temple de l'époque des Archives dans l'Ébla protosyrienne: Fouilles à Tell Mardikh 2004-2005'', \emph{CRAIBL} 150, pp.447--493. \url{https://www.persee.fr/doc/crai_0065-0536_2006_num_150_1_86960}
+\end{itemize}
+
+\textbf{2006-2007}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 2007. ``Nouvelles fouilles à Ébla en 2006: le temple du Rocher et ses successeurs protosyriens et paléosyriens'', \emph{CRAIBL} 151, pp.481--525. \url{https://www.persee.fr/doc/crai_0065-0536_2007_num_151_1_92216}
+\item
+  Matthiae, P., 2010. ``Excavations at Ebla 2006-2007'', In P. Matthiae, L. Nigro, \& N. Marchetti, eds.~\emph{ICAANE} 6. pp.~3--26.
+\end{itemize}
+
+\textbf{2007-2008}
+
+\begin{itemize}
+\tightlist
+\item
+  Matthiae, P. 2009. ``Temples et reines de l'Ébla protosyrienne: résultats des fouilles à Tell Mardikh en 2007 et 2008'', \emph{CRAIBL} 153, pp.747--791. \url{https://www.persee.fr/doc/crai_0065-0536_2009_num_153_2_92536}
+\end{itemize}
+
+\hypertarget{reference-works-repertoires-and-dictionaries}{%
+\section{Reference Works, Repertoires, and Dictionaries}\label{reference-works-repertoires-and-dictionaries}}
+
+\hypertarget{dictionaries}{%
+\subsection{Dictionaries}\label{dictionaries}}
+
+No dictionary of Eblaite is currently available. The project of the \emph{Thesaurus Inscriptionum Eblaicarum} (\emph{TIE}) started in 1995 came to a halt after its fourth volume in 2005 (\protect\hyperlink{ref-PettinatoDAgostino1995}{Pettinato \& D'Agostino, 1995}, \protect\hyperlink{ref-PettinatoDAgostino1996}{1996}, \protect\hyperlink{ref-PettinatoDAgostino1998}{1998}; \protect\hyperlink{ref-PettinatoSeminara2005}{Pettinato \& Seminara, 2005}). Only volumes from letter A to D are presently available. The most easily accessible resource are the glossaries of the \emph{ARET} volumes, with the twelfth (\protect\hyperlink{ref-LahlouhCatagnoti2006}{Lahlouh \& Catagnoti, 2006}) being the most comprehensive although not necessarily the most recent. Note, however, that ARET XX (\protect\hyperlink{ref-Archi2018a}{Archi, 2018}), ARET XIV (\protect\hyperlink{ref-Archi2023}{Archi, 2023}), and ARET XXI (\protect\hyperlink{ref-ArchiSpada2023}{Archi \& Spada, 2023}) have an English glossary, while ARET XIX (\protect\hyperlink{ref-Samir2019}{Samir, 2019}) has been published in German.
+
+\hypertarget{grammar-and-morphology}{%
+\subsection{Grammar and Morphology}\label{grammar-and-morphology}}
+
+The grammar published by Amalia Catagnoti (\protect\hyperlink{ref-Catagnoti2012a}{2012}) is a comprehensive overview of Eblaite language, including a detailed bibliography. For a brief introduction, see Catagnoti (\protect\hyperlink{ref-Catagnoti2012a}{2012}, \protect\hyperlink{ref-Catagnoti2022}{2022}) and Kogan and Krebernik (\protect\hyperlink{ref-KoganKrebernik2021b}{2021}).
+
+\hypertarget{palaeographies-and-sign-lists}{%
+\subsection{Palaeographies and Sign Lists}\label{palaeographies-and-sign-lists}}
+
+A palaeography for the administrative record has been published by Catagnoti (\protect\hyperlink{ref-Catagnoti2013a}{2013}). A sign list based on lexical documents by Pietro Mander is included in \emph{MEE} 3 (\protect\hyperlink{ref-Pettinato1981a}{Pettinato, 1981}) as an Appendix. Further works have been conducted by Paoletti (\protect\hyperlink{ref-Paoletti2015}{2015}, \protect\hyperlink{ref-Paoletti2016}{2016}) and Sallaberger (\protect\hyperlink{ref-Sallaberger2001}{2001}). For a comprehensive sign list, Borger's work (\protect\hyperlink{ref-Borger2004}{Borger, 2004}) is considered the best resource, particularly for understanding the archaic syllabic values of the signs.
+
+\hypertarget{bibliographies}{%
+\subsection{Bibliographies}\label{bibliographies}}
+
+The most complete bibliography is \emph{The City of Ebla. A Complete Bibliography of Archaeological and Textual Remains} (\protect\hyperlink{ref-Scarpa2017a}{Scarpa, 2017}). Published in 2017, the list is currently \href{http://ebda.cnr.it/biblio}{updated regularly} on the Ebla Digital Archives Project. On previous works, see pp.14-15, `Previous Eblaite Bibliographies'. Most occurrences are also available in a \href{https://www.zotero.org/groups/1079694/the-city-of-ebla/library}{Zotero open library}.
+Another bibliography, published in 1984, is \emph{The Tablets of Ebla. Concordance and Bibliography} (\protect\hyperlink{ref-BeldEtAl1984}{Beld et al., 1984}): the book offers a list of all published tablets up to 1983 with concordances between inventory and museum numbers, as well as a related bibliographic index. Davidović (\protect\hyperlink{ref-Davidovic1987}{Davidović, 1987}) offers a detailed description of the book's content in her review.
+
+\hypertarget{prosopographies}{%
+\subsection{Prosopographies}\label{prosopographies}}
+
+The main prosopographical resource is the \href{https://www.sagas.unifi.it/p359.html}{Prosopography of Ebla} project of the University of Florence: at present volumes B, G, and K have been published. The site includes several prosopographies, referred to:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/dam-and-dumu-mi-ibrium.pdf}{Ibrium's wives and female relatives};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/dam-and-dumu-mi-yibbi-zikir.pdf}{Ibbi-zikir's wives and female relatives};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/ga-du8.pdf}{wet-nurses, ga-du₈};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/hub.pdf}{acrobats, ḪUB₂(.KI)};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/ib.pdf}{ib(-ib)};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/kid-sag.pdf}{gatekeepers, KID₂.SAG};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/nar.pdf}{musical performers/singers, nar};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/ne-di.pdf}{dancers, NE.DI};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/list_of_pn/simug.pdf}{smiths, simug};
+\item
+  \href{https://www.sagas.unifi.it/upload/sub/eblaweb/ur4.pdf}{collectors, ur₄}.
+\end{itemize}
+
+In addition, \emph{ARES} I (\protect\hyperlink{ref-ArchiEtAl1988}{Archi et al., 1988}) includes prosopographies referred to the following social groups: royal sons (\protect\hyperlink{ref-Scarpa2021b}{Scarpa, 2021a}, \protect\hyperlink{ref-Scarpa2021d}{2021b}), Ibrium's sons, Ibbi-zikir's sons, royal daughters, Ibrium's daughters, Ibbi-zikir's daughters, Ibrium's brothers, court ladies (\protect\hyperlink{ref-Scarpa2021a}{Scarpa, 2021c}; \protect\hyperlink{ref-Tonietti1989a}{Tonietti, 1989b}, \protect\hyperlink{ref-Tonietti1990}{1990}), Ibrium's wives, Ibbi-zikir's wives, judges, overseer of the kunga₂ and IGI.NITA (\protect\hyperlink{ref-Archi2020a}{Archi, 2020}), musicians (\protect\hyperlink{ref-Tonietti1988}{Tonietti, 1988}, \protect\hyperlink{ref-Tonietti1989b}{1989a}, \protect\hyperlink{ref-Tonietti1997a}{1997}).
+
+\hypertarget{onomastics}{%
+\subsection{Onomastics}\label{onomastics}}
+
+The first comprehensive study on onomastics is Pagan (\protect\hyperlink{ref-Pagan1998}{1998}). However, subsequent publications overturned many of his interpretations. The \href{https://www.sagas.unifi.it/p359.html}{Prosopography of Ebla} project includes interpretations for all PNs listed in the volumes. An important resource is also Krebernik's work on personal names (\protect\hyperlink{ref-Krebernik1988a}{1988}).
+
+\hypertarget{repertoires}{%
+\subsection{Repertoires}\label{repertoires}}
+
+Two geographical repertoires are available: \emph{ARES} II (\protect\hyperlink{ref-ArchiEtAl1993}{Archi et al., 1993}) and RGTC 12/1 (\protect\hyperlink{ref-Bonechi1993a}{Bonechi, 1993}). Both have been published in 1993; ARES I contains also references to unpublished documents. The \href{http://ebda.cnr.it/}{EbDA} database offers a research filter for GNs.
+
+A repertoire for divine names is Pomponio and Xella (\protect\hyperlink{ref-PomponioXella1997}{1997}).
+
+\hypertarget{varia}{%
+\subsection{Varia}\label{varia}}
+
+Other useful resources include:
+- Baldacci's work (\protect\hyperlink{ref-Baldacci1992}{1992}) compiles all quoted passages from unpublished documents related to textiles up to 1993. Bonechi's review (\protect\hyperlink{ref-Bonechi1997e}{1997}) provides further insights.
+- Archi (\protect\hyperlink{ref-Archi2002a}{2002, pp. 187--199}) offers an index of jewels and precious items associated with women's marriages and funerals, potentially providing context for textile use.
+- Pasquali (\protect\hyperlink{ref-Pasquali2005a}{2005}) provides a detailed account of tools, techniques, and objects used in textile production.
+- Pasquali's earlier work (\protect\hyperlink{ref-Pasquali1997b}{1997}) delves specifically into the terminology used for textiles within the administrative records.
+
+\hypertarget{abbreviations}{%
+\section{Abbreviations}\label{abbreviations}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1667}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8333}}@{}}
+\caption{\label{tab:abbreviation} Most common abbreviations in Eblaite studies.}\tabularnewline
+\toprule\noalign{}
+\endfirsthead
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\emph{A} or \emph{ARET} & \emph{Archivi Reali di Ebla, Testi} \\
+AAM & Annual Account of Metals (CAM = RAM) \\
+Akk. & Akkadian \\
+Ar. & ArruLUM \\
+\emph{ARED} & \emph{Archivi Reali di Ebla, Edizione digitale} (CD-ROM) \\
+\emph{ARES} & \emph{Archivi Reali di Ebla, Studi} \\
+\emph{CAD} & \emph{Chicago Assyrian Dictionary} \\
+\emph{CAD} Supp. & \emph{Chicago Assyrian Dictionary} Supplementa \\
+CAM & Comptes rendus annuels de métaux ( = AAM = RAM) \\
+\emph{DCCLT} & \emph{Digital Corpus of Cuneiform Lexical Texts}, \url{http://oracc.museum.upenn.edu/dcclt/} \\
+DN & Divine Name \\
+\emph{DNWSI} & Hoftijzer, J.; Jongelin, K. (1995), \emph{Dictionary of the North-West Semitic Inscriptions}, Leiden \\
+\emph{DRS} & Cohen, D. (1976--), \emph{Dictionnaire des racines sémitiques}, La Haye \\
+\emph{DUL}\textsuperscript{3} & del Olmo Lete, G.; Sanmartín, J. (2015), \emph{A Dictionary of the Ugaritic Language in the Alphabetic Tradition} (third edition), Leiden - Boston \\
+\emph{EbDA} & \emph{Ebla Digital Archives}, \url{http://ebda.cnr.it} \\
+Ebl. & Eblaite \\
+EBK & eš\textsubscript{2}-bar-kin\textsubscript{5} unilingual lexical composition \\
+ED Lu\textsubscript{(2)} A & Early Dynastic Lu\textsubscript{(2)} A \\
+\emph{ePSD} & \emph{Electronic Pennsylvania Sumerian Dictionary} \url{http://psd.museum.upenn.edu/nepsd-frame.html}\footnote{Now only partially functional.} \\
+\emph{ePSD} 2 & \emph{Electronic Pennsylvania Sumerian Dictionary 2} \url{http://oracc.museum.upenn.edu/epsd2/sux} \\
+ESL & Ebla Sign List \\
+ERR & Ebla Royal Ritual \\
+\emph{EV} & \emph{Estratti del Vocabolario} \\
+GN & Geographical Name \\
+I.Z. & Ibbi-zikir \\
+Ib. & Ibrium \\
+\emph{M} or \emph{MEE} & \emph{Materiali Epigrafici di Ebla}, Napoli-Roma. \\
+MAT & Monthly Account of Textiles \\
+ND & Nome di divinità (DN) \\
+NG & Nome di geografico (GN) \\
+NP & Nome di persona (NP) \\
+obv. & obverse (= recto) \\
+PN & Personal Name \\
+\emph{PSD} & \emph{The Sumerian Dictionary of the University Museum of the University of Pennsylvania}, Phildelphia 1984--- \\
+r. & recto (= obverse) \\
+RAM & Resoconti Annuali di Metalli (AAM = CAM) \\
+rev. & reverse (= verso) \\
+\emph{RGTC} & \emph{Répertoire géographique des textes cunéiformes}, Wiesbaden \\
+\emph{RlA} & \emph{Reallexikon der Assyriologie und vorderasiatischen Archäologie}, Berlin \\
+Sem. & Semitic \\
+Sum. & Sumerian \\
+\emph{TIE} & \emph{Thesaurus Inscriptionum Eblaicarum} \\
+Ug. & Ugaritic \\
+v. & verso (= reverse) \\
+\emph{VE} & \emph{Vocabolario di Ebla} \\
+\end{longtable}
+
+\hypertarget{chronology-and-time-tracking}{%
+\chapter{Chronology and Time-tracking}\label{chronology-and-time-tracking}}
+
+\hypertarget{dating-the-age-of-the-archives}{%
+\section{Dating the Age of the Archives}\label{dating-the-age-of-the-archives}}
+
+The absolute chronology of Ebla during the Age of the Archives remains under debate, though most evidence points to the mid- to late-3rd millennium BCE. Archaeological and textual evidence generally places the period between approximately 2400 and 2250 BCE. Radiocarbon analyses on sixteen short-lived plant samples from Royal Palace G and Building P4 suggest the city's destruction occurred sometime between 2367 and 2293 BCE (\protect\hyperlink{ref-CalcagnileEtAl2013}{Calcagnile et al., 2013}). However, the precise dating and its alignment with other contemporary events can vary depending on scholarly interpretations and the specific lines of evidence considered.
+
+The destruction of Ebla, a \emph{terminus ante quem} for dating the Archives, remains a major point of debate. Scholars disagree on the perpetrators, with some attributing it to Sargon or Narām-Sîn of Akkad based on their claims of conquering Armanum and Ebla. Others propose Mari as the perpetrator. Durand (\protect\hyperlink{ref-Durand2012}{2012}) suggests a more specific scenario, identifying a Mari šakkanakku acting under Sargon's orders.
+
+The interpretation that Ebla's destruction was caused by Sargon relies on a series of royal inscriptions where Sargon claims that the god Dagan granted him Mari, Yarmuti, and Ebla. One of these inscriptions is contained in an Old Babylonian \emph{Sammeltafeln}, of which at least two copies have survived. One is \href{https://cdli.mpiwg-berlin.mpg.de/artifacts/227510}{Ni3200}, and the second, \href{https://www.penn.museum/collections/object/347461}{CBS 13972 + CBS 14545}, was unearthed during the Babylonian Expedition to Nippur I-IV, which took place between 1888 and 1900. This tablet, reconstructed from numerous fragments, contains 22 texts together with brief captions. Originally attached to the monuments kept in the courtyard of the Ekur Temple in Nippur, the inscriptions were commissioned by the kings of Agade to commemorate their conquests. While one of these inscriptions mentions Ebla, it doesn't necessarily confirm its destruction by Sargon. Narām-Sîn, Sargon's grandson, also left several inscriptions boasting, for example, that he was ``the mighty king of the four quarters, conqueror of Armānum and Ebla'' on a \href{https://www.carmentis.be/eMP/eMuseumPlus?service=ExternalInterface\&module=collection\&objectId=87396\&viewType=detailView}{steatite vessel-shaped object}, on a \href{https://cdli.mpiwg-berlin.mpg.de/artifacts/216630}{metal bowl} (IMJ 74.49.99), and on a \href{https://collections.louvre.fr/en/ark:/53355/cl010121772}{pedestal}.
+
+Matthiae (\protect\hyperlink{ref-Matthiae2008a}{2008, pp. 96--97}) explains this impasse, suggesting that the importance of Ebla and its destruction by Sargon made the city a well-known reference point in the Syrian territory for people living in Babylonia. Narām-Sîn technically defeated only Armānum, but mentioned Ebla in his inscription because its name was well-known due to his grandfather's endeavors. In 2003, Archi and Biga offered new evidence substantiating Sargon's direct involvement in the destruction of Ebla and added further insight into the topic (\protect\hyperlink{ref-ArchiBiga2003}{Archi \& Biga, 2003}). First, they observed that Kiš's prominence among Babylonia's most important cities suggests that Agade was not yet at the peak of its power. Kiš was certainly independent until Ebla's final days. The peak of Ebla's alliance with Kiš was reached when the wedding of the Eblaite princess Kešdut with its king was sealed.
+
+The scribes of the Archives did not consistently use year names to date their documents. Monthly accounts of textiles only mention the month, while only a few texts, like the income records (mu-DU), include a specific year reference. To establish a chronological sequence, Archi and Biga (\protect\hyperlink{ref-ArchiBiga2003}{2003}) cross-referenced the annual accounts of metal (AAM) with other sources. This timeline aligns with the mandated terms of the viziers, who assisted the king (see Figure \ref{fig:chronology}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{./assets/Chronology} 
+
+}
+
+\caption{Chronological chart of Ebla’s kings and viziers. After Archi - Biga 2003 and Archi 2016.}\label{fig:chronology}
+\end{figure}
+
+\hypertarget{time-tracking}{%
+\section{Time-tracking}\label{time-tracking}}
+
+\hypertarget{month-names}{%
+\subsection{Month Names}\label{month-names}}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5070}}
+  >{\centering\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1408}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3521}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Standard calendar
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Month
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+`New' calendar
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+iti \emph{i-si} & I & iti nidba₂ dingir\emph{a-dam-ma-um} \\
+iti \emph{ig-za} & II & iti še-gur₁₀-ku₅ \\
+iti \emph{ig-za}-II & II (intercalary) & iti še-gur₁₀-ku₅-II \\
+iti \emph{za}-ʾ\emph{a}₃-\emph{tum}, \emph{za}-ʾ\emph{a}₃-\emph{na-at} & III & iti dingirAMA-\emph{ra} \\
+iti \emph{gi}-NI & IV & iti nidba₂ dingir\emph{ga-mi-iš} \\
+iti \emph{ḫa-li}, \emph{ḫa-li}-NI, \emph{ḫa-li-du}, \emph{ha-li-id}x & V & iti \emph{be-li} \\
+iti \emph{i-ri}₂-\emph{sa}₂ & VI & iti nidba₂ dingir\emph{aš-da}-BIL₂ \\
+iti \emph{ga-sum} & VII & iti NI-DU \\
+iti ʾ\emph{a}₅-\emph{nun}, ʾ\emph{a}₅-\emph{nun-na}, ʾ\emph{a}₅-\emph{un-at} & VIII & iti nidba₂ dingirʾ\emph{a}₃-\emph{da} \\
+iti \emph{za-lul} & IX & iti NI-\emph{la-mu}, \emph{ir-me} \\
+iti \emph{i-ba}₄-\emph{sa}, \emph{i-ba}₄-\emph{sa}₂ & X & iti \emph{ḫur-mu}, izi-gar \\
+iti MA×GANA₂\emph{tenû}-sag & XI & iti e₃ \\
+iti MA×GANA₂\emph{tenû}-GUDU₄ & XII & iti kur₆ \\
+\end{longtable}
+
+\hypertarget{dating-the-destruction-of-ebla}{%
+\section{Dating the Destruction of Ebla}\label{dating-the-destruction-of-ebla}}
+
+\hypertarget{IM221139}{%
+\subsection{Fragmentary Narām-Sîn inscription (IM 221139)}\label{IM221139}}
+
+An Old-Akkadian inscription was unearthed at \href{https://pleiades.stoa.org/places/698215287}{Tulūl al-Baqarāt} by the Iraqi expedition during the campaigns of 2008--2010. Lippolis and Viano (\protect\hyperlink{ref-LippolisViano2016}{2016}) proposed identifying the site as the ancient religious city of Keš, where a sacred area dedicated to Ninhursaga was located. Archaeologists discovered this fragment at the base of the staircase leading to the temple terrace.
+
+This text can now be added to the collection of Old-Akkadian royal inscriptions that mention Narām-Sîn's campaign against Armānum and Ebla. The preserved portion of the text consists of a list of prisoners, including Armānum's king Rida-Hadda, several of his family members, his entourage, and some officials, Notably, the text provides a remarkable count of 70,805 prisoners of war.
+
+The second part of the surviving text matches RIME 2.1.4.27 esp.1, 2, and 3, corrisponding to a steatite vessel (MRAH O.710), a metal bowl (\ref{IMJ744999}), and a pedestal (\ref{AO3296}).
+
+Until recently, these four inscriptions supported the hypothesis that Ebla was destroyed by Narām-Sîn. However, doubts about this interpretation have emerged due to the discovery of the inscription discussed here. The surviving text comprises a list of war prisoners captured during the conflict against Armi, the city Narām-Sîn besieged and defeated, with no mention of Eblaite priisoners. Ebla might have been mentioned to provide geographical context to the event, reminiscent of Sargon's victory against Ebla a few years earlier. Additionally, as noted by Alkhafaji and Marchesi, Narām-Sîn's year name celebrating this victory only refers to the defeat of Armi (\protect\hyperlink{ref-AlkhafajiMarchesi2020}{Alkhafaji \& Marchesi, 2020}). This year name appears in RBC 2664, rev.4-9, and refers to the conquest of Armānum:(\protect\hyperlink{ref-Salgues2011}{Salgues, 2011}) in 1 MU / \emph{na-ra-am}-\textsuperscript{d}EN.ZU / \emph{ar-ma-num}\textsuperscript{ki} / SAG.⸢GEŠ.RA⸣ / BAD₃-{[}\emph{su}{]} / \emph{u-na}-{[}\emph{qi}₂/\emph{qe}₃-\emph{ru}{]}, `the year Narām-Sîn conquered Armānum, destr{[}oyed its{]} wall.' The defeat of Armānum was certainly a major event during Narām-Sîn's reign, as it also appears in another year name celebrating the dedication of a sculpted image of the city to the god Enlil.\footnote{{[}mu \textsuperscript{(d)}\emph{na-ra-am}-\textsuperscript{d}EN.ZU / e₂ \textsuperscript{d}en-li{]}l-la₂-se₃ / dul₃ \emph{ar}\textsuperscript{!}(\emph{ri})-\emph{ma-num}₂\textsuperscript{ki} / a im-mi-ru-a, `{[}the year in which Narām-Sîn{]} dedicated a sculpted image of Armānum to {[}the temple{]} of {[}Enli{]}l' (\href{https://cdli.mpiwg-berlin.mpg.de/artifacts/216062}{OIP 97, p.82 no.9}). See Alkhafaji and Marchesi (\protect\hyperlink{ref-AlkhafajiMarchesi2020}{2020, p. 19}) for the transliteration.}
+
+\hypertarget{IMJ744999}{%
+\subsection{Metal bowl with Narām-Sîn's inscription (IMJ 74.49.99)}\label{IMJ744999}}
+
+The Israel Museum acquired this metal bowl bearing an inscription commemorating Narām-Sîn's victory over Armānum and Ebla in 1974 from a private collection, previously obtained in Teheran. The inscription was published by Frayne (\protect\hyperlink{ref-Frayne1993}{1993}) as RIME 2.1.4.27, ex. 3, and later collated by Goodnick-Westenholz in 1998 (\protect\hyperlink{ref-GoodnickWestenholz1998}{Goodnick Westenholz, 1998}). No record of this object is currently available on the Museum's website.
+
+This bowl bears the same inscription as a steatite vessel (RIME 2.1.4.27, ex. 1), a pedestal (\ref{AO3296}) discovered in Girsu, and an inscription recently discovered at Tulūl al-Baqarāt (\ref{IM221139}).
+
+\hypertarget{AO3296}{%
+\subsection{Perforated pedestal for a statue with Narām-Sîn's inscription (AO 3296)}\label{AO3296}}
+
+This rectangular plaque probably served as a support for a statue. The object bears an inscription mentioning Narām-Sîn, the conqueror of Armānum and Ebla, which is also found on a metal bowl (\ref{IMJ744999}), a stone vessel, and a fragmentary inscription discovered at Tulūl al-Baqarat (\ref{IM221139}). \href{Perforated\%20pedestal\%20for\%20a\%20statue\%20with\%20Narām-Sîn\textquotesingle{}s\%20inscription\%20(AO\%203296)}{AO 3296} (\href{https://cdli.mpiwg-berlin.mpg.de/artifacts/216629}{CDLI 216629}) was discovered during the French expedition led by De Sarzec at Girsu/Telloh between 1895 and 1900. Currently, the object is part of the Musée du Louvre collection. The Museum's records suggests it is not on display.
+
+For a detailed discussion of the inscription, refer to the record for the steatite vessel with Narām-Sîn's inscription (MRAH O.710). In this particular exemplar the GN \emph{eb-la}\textsuperscript{ki} is lost, but the inscription is almost certainly a copy of the three listed above.
+
+It is worth noting that the picture in Découvertes en Chaldée (1884) depicts two similar bases with different inscriptions (\protect\hyperlink{ref-deSarzec1912}{de Sarzec, 1912}, plate 26bis). Some editors have mistakenly confused the two museum numbers associated with these bases. The one being discussed here is \href{https://collections.louvre.fr/en/ark:/53355/cl010121772}{AO 3296} (RIME 2.1.4.27, ex.2), which is a poorly preserved schist base and features three crescent-shaped axes engraved with the inscription mentioning Narām-Sîn as the conqueror of Armanum and Ebla. For additional information on the inventory numbers, see Molina (\protect\hyperlink{ref-Molina2022}{2022, p. 165n11}).
+
+The other base, \href{https://collections.louvre.fr/en/ark:/53355/cl010121771}{AO 3291} (RIME 2.1.4.53), is very similar and better preserved but bears an inscription with the name of one of Narām-Sîn's sons and his granddaughter, without any engraved axes.
+
+\hypertarget{sammeltafeln-of-the-monuments-of-the-kings-of-agade-cbs-13972-cbs-14545}{%
+\subsection{\texorpdfstring{\emph{Sammeltafeln} of the monuments of the kings of Agade (CBS 13972 + CBS 14545)}{Sammeltafeln of the monuments of the kings of Agade (CBS 13972 + CBS 14545)}}\label{sammeltafeln-of-the-monuments-of-the-kings-of-agade-cbs-13972-cbs-14545}}
+
+An Old Babylonian summary tablet (\emph{Sammeltafeln}), known as CBS 13972, was unearthed during the Babylonian Expedition to Nippur I-IV, which took place between 1888 and 1900, as documented in the Museum's archives. This tablet, reconstructed from numerous fragments, contains 22 texts along with brief captions. Originally, these inscriptions adorned the monuments within the courtyard of the Ekur Temple in Nippur. They were commissioned by the kings of Agade to commemorate their conquests.
+
+Notably, part of this tablet (CBS 14545), was first published by Arno Poebel in 1914 (\protect\hyperlink{ref-Poebel1914}{Poebel, 1914, pp. 177--178}, plate XX, no. 34 C and D). Subsequently, in 1926, Leon Legrain published a joining fragment, CBS 13972.\footnote{Legrain (\protect\hyperlink{ref-Legrain1922}{1922}), 12--27, \href{https://archive.org/details/royalinscription00legr_0/page/55/mode/1up?view=theater}{plate II}, plate XV (\href{https://archive.org/details/royalinscription00legr_0/page/82/mode/1up}{handcopy}; of CBS 13972 only), text no. 41. See the museum's \href{https://www.penn.museum/collections/object_images.php?irn=347461}{pictures.} Legrain also published the fragments in the museum's \href{https://www.penn.museum/sites/journal/9818/}{journal}.} However, the tablet is typically referred to simply as CBS 13972. More comprehensive editions of the tablet were later provided by Gelb and Kienast in 1990 and Frayne in 1993, which incorporated all available fragments (\protect\hyperlink{ref-Frayne1993}{Frayne, 1993}; \protect\hyperlink{ref-GelbKienast1990}{Gelb \& Kienast, 1990}).
+
+Among the texts preserved in this anthology are three inscriptions that recount Sargon of Agade's successful conquests. According to the colophons, these texts (one written Sumerian, two in Akkadian) adorned some statues. The first inscription (\protect\hyperlink{ref-GelbKienast1990}{Gelb \& Kienast, 1990}), Sargon C 2, Text A = RIME 2.1.1.11{]} commemorates Sargon's victories, with a particularly noteworthy passage in obv. V:17-31 emphasizing the divine grant of Mari, Iarmuti, and Ebla by the god Dagan. The Sumerian text reads as follows:
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+V:17 & CBS~13972 & \emph{šar-um}-GI & \\
+V:18 & CBS~13972 & lugal & \\
+V:19 & CBS~13972 & du₈-du₈-li\textsuperscript{ki}-a & \\
+V:20 & CBS~13972 & \textsuperscript{d}dagan-ra & \\
+V:21 & CBS~13972 & ki-a mu-na-za & \\
+V:22 & CBS~13972 & šu₁₂ mu-na-ša₄ & \\
+V:23 & CBS~13972 & kalam igi-nim & \\
+V:24 & CBS~13972 & mu-na-sum₂ & \\
+V:25 & CBS~14545 & \emph{ma-ri}₂\textsuperscript{ki} & \\
+V:26 & CBS~14545 & \emph{ia}₃-\emph{ar-mu-ti}\textsuperscript{ki} & \\
+V:27 & CBS~14545 & \emph{eb-la}\textsuperscript{ki} & \\
+V:28 & CBS~14545 & tir- & \\
+V:29 & CBS~14545 & \textsuperscript{giš}erin & \\
+V:30 & CBS~14545 & hur-saĝ & \\
+V:31 & CBS~14545 & ku₃-ga-še₃ & \\
+\end{longtable}
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-AlkhafajiMarchesi2020}{}}%
+Alkhafaji, N., \& Marchesi, G. (2020). Naram-{Sin}'s {War} against {Armanum} and {Ebla} in a {Newly-Discovered Inscription} from {Tulul} al-{Baqarat}. \emph{Journal of Near Eastern Studies}, \emph{79}(1), 1--20. \url{https://doi.org/10.1086/707663}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Archi1988b}{}}%
+Archi, A. (Ed.). (1988). \emph{Eblaite {Personal Names} and {Semitic Name-giving} : {Papers} of a {Symposium Held} in {Rome}, {July} 15-17, 1985}. Missione archeologica italiana in Siria.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Archi2002a}{}}%
+Archi, A. (2002). Jewels for the {Ladies} of {Ebla}. \emph{Zeitschrift f{ü}r Assyriologie Und Vorderasiatische Arch{ä}ologie}, \emph{92}, 161--199. \url{https://doi.org/10.1515/zava.2002.92.2.161}
+\CSLBlock{\newline☞ In this paper, Archi focuses on the gifts delivered to court ladies on their marriages or funerary ceremonies. He considers eleven case studies: six marriages (those of~\emph{i-ti-mu-ud},~\emph{ti-a-i-{š}ar},~\emph{ri}{\(_2\)}-\emph{i}{\(_3\)}-\emph{du},~\emph{ar-za-du},~\emph{zu-ga}-LUM) and four funerals (those of~\emph{gi-mi}-NI-\emph{za-du},~\emph{da-ri-ib-da-mu},~\emph{ti-i{š}-te-da-mu},~\emph{du-si-gu}{\(_2\)}). In addition, Archi also takes into consideration~\emph{ti-ne-ib}{\(_2\)}-\emph{du-rum'}s consecration as priestess (DAM.DINGIR). After a detailed analysis of the gifts delivered on these occasions, Archi concludes that upon their deaths women received the same set of garments and jewels delivered to them on the occasion of their weddings. He further proceeds describing the full set of garments and jewels generally delivered to high ranking women upon these occasions. He then investigates the gifts generally brought by the deceased to their ancestors, and concludes with a few remarks on the wailing rite. A detailed index of the jewels considered in this study is included. Note that the following quoted documents have since been published: ARET XV 29 = TM.75.G.1567; MEE 7 29 = TM.75.G.1705; MEE 7 50 = TM.75.G.1781; MEE 10 20 = TM.75.G.1860; MEE 10 29 = TM.75.G.1918; ARET XV 47 = TM.75.G.2165; ARET XX 25 = TM.75.G.2334; MEE 12 35 = TM.75.G.2428; MEE 12 35 = TM.75.G.2508. Furthermore, ARET XII 874 = TM.75.G.5317 has been published as a fragment, but in this study is quoted as~TM.75.G.1250+TM.75.G.5317.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Archi2015b}{}}%
+Archi, A. (2015). The {Tablets} of the {Throne Room} of the {Royal Palace G} of {Ebla}. \emph{Archiv f{ü}r Orientforschung}, \emph{53}, 9--18. \url{https://www.jstor.org/stable/44810781}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Archi2018a}{}}%
+Archi, A. (2018). \emph{Administrative {Texts}: {Allotments} of {Clothing} for the {Palace Personnel} ({Archive L}. 2769)}. Harrassowitz.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Archi2019d}{}}%
+Archi, A. (2019). {{``Palace''} at Ebla: An Emic Approach}. In D. Wicke (Ed.), \emph{{Der Palast im antiken und islamischen Orient: 9. Internationales Colloquium der Deutschen Orient-Gesellschaft, 30. M{ä}rz - 1. April 2016, Frankfurt am Main}} (pp. 1--33). Harrassowitz.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Archi2020a}{}}%
+Archi, A. (2020). {The Overseers of the Teams of Mules and Asses, ugula sur\textsubscript{x}-BAR.AN/IGI.NITA}. \emph{Asia Anteriore Antica. Journal of Ancient Near Eastern Cultures}, \emph{2}, 45--51. \url{https://doi.org/10.13128/asiana-782}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Archi2022b}{}}%
+Archi, A. (2022). Publication of the {Archives} of {Ebla}: {A Report} on the {Work} in {Progress}. \emph{Studia Eblaitica}, \emph{8}, 29--41.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Archi2023}{}}%
+Archi, A. (2023). \emph{Annual {Documents} of {Deliveries} (mu-{DU}) to the {Central Administration}: {Archive L}.2769}. Harrassowitz Verlag.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ArchiBiga2003}{}}%
+Archi, A., \& Biga, M. G. (2003). A {Victory} over {Mari} and the {Fall} of {Ebla}. \emph{Journal of Cuneiform Studies}, \emph{55}, 1--44. \url{https://doi.org/10.2307/3515951}
+
+\leavevmode\vadjust pre{\hypertarget{ref-ArchiEtAl1988}{}}%
+Archi, A., Biga, M. G., \& Milano, L. (1988). Studies in {Eblaite Prosopography}. In A. Archi (Ed.), \emph{Eblaite {Personal Names} and {Semitic Name-Giving}. {Papers} of a {Symposium Held} in {Rome July} 15-17, 1985} (pp. 205--306).
+
+\leavevmode\vadjust pre{\hypertarget{ref-ArchiEtAl1993}{}}%
+Archi, A., Piacentini, P., \& Pomponio, F. (1993). \emph{{I nomi di luogo dei testi di Ebla}}. Universit{à} degli Studi di Roma "La Sapienza".
+
+\leavevmode\vadjust pre{\hypertarget{ref-ArchiSpada2023}{}}%
+Archi, A., \& Spada, G. (2023). \emph{Annual {Documents} of the {Metal Expenditures} ({è}) from {Minister Ibrium}'s {Period} ({Archive L}. 2769)}. Harrassowitz Verlag.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Baldacci1992}{}}%
+Baldacci, M. (1992). \emph{Partially {Published Eblaite Texts}}. Istituto Universitario Orientale di Napoli.
+
+\leavevmode\vadjust pre{\hypertarget{ref-BeldEtAl1984}{}}%
+Beld, S. G., Hallo, W. W., \& Michalowski, P. (1984). \emph{The {Tablets} of {Ebla}. {Concordance} and {Bibliography}}. Eisenbrauns.
+\CSLBlock{\newline☞ Reviewed by Davidovi{ć}, \emph{JAOS} 107 (1987), 330--331.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Biga2018b}{}}%
+Biga, M. G. (2018). {Gioielli per una fanciulla alla corte di Ebla}. In A. Vacca, S. Pizzimenti, \& M. G. Micale (Eds.), \emph{{A Oriente del Delta. Scritti sull'Egitto ed il Vicino Oriente Antico in onore di Gabriella Scandone Matthiae}} (pp. 63--77). Scienze e lettere.
+\CSLBlock{\newline☞ In this paper, Biga offers the edition of~TM.75.G.1679: the document registers expenditures of gold, silver, and jewels (also decorated with precious stones) for~\emph{ti-a-ba-zu}{\(_2\)}'s marriage with~\emph{ba-du-lum}~(Ibrium's son). Biga then proceeds with discussing the identity of the event's main protagonists and their namesakes. She offers some remarks on the jewels mentioned in the texts (\emph{ti-gi-na}, e{\(_{2}~\)}\emph{wa}~2~\emph{da-bi}{\(_2\)}-\emph{tum},~\emph{ḫa-za-nu}), in particular the KA.KAK.BU necklace. In her concluding remarks, Biga also discusses the expression nig{\(_2\)}-a-de{\(_{3}~\)}i{\(_3\)}-gi{š}~\emph{a}~sag and its variants, a formula connected to the wedding ritual at Ebla.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bonechi1993a}{}}%
+Bonechi, M. (1993). \emph{{I nomi geografici dei testi di Ebla}}. Reichert.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bonechi1997e}{}}%
+Bonechi, M. (1997). Review of {\emph{Partially Published Eblaite Texts}} by {Masimo Baldacci}. \emph{Revue d'Assyriologie Et d'arch{é}ologie Orientale}, \emph{91}, 176--178. \url{https://www.jstor.org/stable/23281913}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bonechi2013}{}}%
+Bonechi, M. (2013). Ebla. In D. C. Allison, V. Leppin, C. Seow, H. Spieckermann, B. D. Walfish, \& E. Ziolkowski (Eds.), \emph{Encyclopedia of the {Bible} and {Its Reception}} (pp. 248--254).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bonechi2016k}{}}%
+Bonechi, M. (2016). {Chi scrisse cosa a chi. Struttura e prosopografia di 75.2342 = ARET XIII 3, la {``Lettera da Ḫamazi''} eblaita}. In P. Corò, E. Devecchi, N. De Zorzi, \& M. Maiocchi (Eds.), \emph{{Libiamo ne' lieti calici. Ancient Near Eastern Studies Presented to Lucio Milano on the Occasion of his 65th Birthday by Pupils, Colleagues and Friends}} (pp. 3--27).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bonechi2020c}{}}%
+Bonechi, M. (2020). The {Text} of the {Ebla Administrative Account TM}.75.{G}.1866+10016 ({\emph{ARET}} {I} 2 + {\emph{ARET}} {IV} 23). \emph{Studia Eblaitica}, \emph{6}, 143--152.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bonechi2023b}{}}%
+Bonechi, M. (2023). {TM}.75.{G}.5294 = {\emph{ARET}} {XII} 858 + {TM}.75.{G}.2072 = {\emph{ARET}} {XIV} 89, an {Ebla} {\emph{T{é}l{é}joint}}. \emph{Nouvelles Assyriologiques Br{è}ves Et Utilitaires}, \emph{2023/4}, 10--11.
+\CSLBlock{\newline☞ In this note Bonechi proposes a new join between ARET XIV 89 = TM.75.G.2072 (published by Archi in 2023) and fragment ARET XII 858 = TM.75.G.5294 published in 2006 by Lahlou and Catagnoti. A new edition of the parts affected by the join is included. For the tablet, see ARET XIV 89 = TM.75.G.2072 + ARET XII 858 = TM.75.G.5294.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Borger2004}{}}%
+Borger, R. (2004). \emph{{Mesopotamisches Zeichenlexikon}}. Ugarit.
+
+\leavevmode\vadjust pre{\hypertarget{ref-CalcagnileEtAl2013}{}}%
+Calcagnile, L., Quarta, G., \& D'Elia, M. (2013). Just at that {Time}. {\textsuperscript{14}}{C Determinations} and {Analysis} from {EB 4A Layer}. In P. Matthiae \& N. Marchetti (Eds.), \emph{Ebla and {Its Landscape}: {Early State Formation} in the {Ancient Near East}} (pp. 450--458). Taylor \& Francis.
+\CSLBlock{\newline☞ The paper provides an in-depth account of the methodologies and outcomes of the 14C analyses performed on sixteen samples extracted from short-lived plant species gathered from Royal Palace G and Building P4 between 1988 and 1990. The analyses ascertain that, apart from a single outlier, all samples are likely to date to calibrated years 2367--2293 BCE.}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Catagnoti2012a}{}}%
+Catagnoti, A. (2012). \emph{{La grammatica della lingua di Ebla}}. Universit{à} di Firenze.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Catagnoti2013a}{}}%
+Catagnoti, A. (2013). \emph{{La paleografia dei testi dell'amministrazione e della cancelleria di Ebla}}. Universit{à} di Firenze.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Catagnoti2022}{}}%
+Catagnoti, A. (2022). \emph{Mnamon: {Eblaita}}. \url{https://doi.org/10.25429/SNS.IT/LETTERE/MNAMON043}
+
+\leavevmode\vadjust pre{\hypertarget{ref-CatagnotiFronzaroli2020}{}}%
+Catagnoti, A., \& Fronzaroli, P. (2020). \emph{{Testi di cancelleria. Il re e i funzionari: Archivio L.2875. Parte II}}. Harrassowitz.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Conti1993}{}}%
+Conti, G. (1993). {Il sistema grafico eblaita e la legge di Geers}. \emph{Quaderni del Dipartimento di Linguistica}, \emph{4}, 97--114.
+
+\leavevmode\vadjust pre{\hypertarget{ref-DAgostino1990a}{}}%
+D'Agostino, Franco. (1990). \emph{{Il sistema verbale sumerico nei testi lessicali di Ebla: saggio di linguistica tassonomica}}. Universit{à} degli Studi di Roma "La Sapienza".
+
+\leavevmode\vadjust pre{\hypertarget{ref-Davidovic1987}{}}%
+Davidović, V. (1987). Review of {\emph{The Tablets}}{ \emph{of} }{\emph{Ebla}}{\emph{:} }{\emph{Concordance}}{ \emph{and} }{\emph{Bibliography}} by {Scott G}. {Beld}, {William W}. {Hallo}, and {Piotr Michalowski}. \emph{Journal of the American Oriental Society}, \emph{107}, 330--331. \url{https://doi.org/10.2307/602844}
+
+\leavevmode\vadjust pre{\hypertarget{ref-deSarzec1912}{}}%
+de Sarzec, E. (1912). \emph{{D{é}couvertes en Chald{é}e}} (L. Heuzey, Ed.). Ernest Leroux.
+
+\leavevmode\vadjust pre{\hypertarget{ref-DiFilippoEtAl2018}{}}%
+Di Filippo, F., Maiocchi, M., Milano, L., \& Orsini, R. (2018). {The {``Ebla Digital Archives''} Project: How to Deal With Methodological and Operational Issues in the Development of Cuneiform Texts Repositories}. \emph{Archeologia e Calcolatori}, \emph{29}, 117--142. \url{https://doi.org/10.19282/ac.29.2018.14}
+
+\leavevmode\vadjust pre{\hypertarget{ref-DiFilippoEtAl2023a}{}}%
+Di Filippo, F., Maiocchi, M., \& Scarpa, E. (2023). {La geo-localizzazione del materiale epigrafico del Grande Archivio L.2769 (Ebla, Siria): obiettivi e prospettive nel quadro del progetto Ebla Digital Archives}. \emph{Scienze dell'Antichit{à}}, \emph{29}, 133--146.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Durand2012}{}}%
+Durand, J.-M. (2012). {Sargon a-t-il d{é}truit la ville de Mari~?} \emph{Revue d'assyriologie et d'arch{é}ologie orientale}, \emph{106}(1), 117--132. \url{https://doi.org/10.3917/assy.106.0117}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Frayne1993}{}}%
+Frayne, D. R. (1993). \emph{Sargonic and {Gutian Periods} (2234-2113 {BC})}. University of Toronto Press. \url{https://doi.org/10.3138/9781442658578}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Fronzaroli2003a}{}}%
+Fronzaroli, P. (2003). \emph{{Testi di cancelleria: I rapporti con le citt{à} (Archivio L.2769)}}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-GelbKienast1990}{}}%
+Gelb, I. J., \& Kienast, B. (1990). \emph{{Die altakkadischen K{ö}nigsinschriften des dritten Jahrtausends v. Chr}}. Steiner.
+
+\leavevmode\vadjust pre{\hypertarget{ref-GoodnickWestenholz1998}{}}%
+Goodnick Westenholz, J. (1998). Object with {Messages}: {Reading Old Akkadian Royal Inscriptions}. \emph{Bibliotheca Orientalis}, \emph{55}, 44--59. \url{https://doi.org/10.2143/BIOR.55.1.2015845}
+
+\leavevmode\vadjust pre{\hypertarget{ref-HuehnergardWoods2008}{}}%
+Huehnergard, J., \& Woods, C. (2008). Akkadian and {Eblaite}. In R. D. Woodard (Ed.), \emph{The {Ancient Languages} of {Mesopotamia}, {Egypt} and {Aksum}} (pp. 83--152). Cambridge University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-KoganKrebernik2021b}{}}%
+Kogan, L. E., \& Krebernik, M. (2021). Eblaite. In J.-P. Vita (Ed.), \emph{History of the {Akkadian Language}} (pp. 664--989). Brill. \url{https://doi.org/10.1163/9789004445215_013}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Krebernik1988a}{}}%
+Krebernik, M. (1988). \emph{{Die Personennamen der Ebla-Texte. Eine Zwischenbilanz}}. Reimer.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Krebernik1996b}{}}%
+Krebernik, M. (1996). The {Linguistic Classification} of {Eblaite}. {Methods}, {Problems}, and {Results}. In J. S. Cooper \& G. M. Schwartz (Eds.), \emph{The {Study} of the {Ancient Near East} in the {Twenty-First Century}: {The William Foxwell Albright Centennial Conference}} (pp. 233--249). Eisenbrauns.
+
+\leavevmode\vadjust pre{\hypertarget{ref-LahlouhCatagnoti2006}{}}%
+Lahlouh, M., \& Catagnoti, A. (2006). \emph{{Testi amministrativi di vario contenuto (Archivio L.2769: TM.75.G.4102-6050)}}.
+\CSLBlock{\newline☞ This volume continues the publication of fragmentary texts from the Central Archive L.2769. It collects documents corresponding to inventory numbers TM.75.G.4102-6050, excluding lexical lists and texts from other categories currently being prepared for separate editions. The transcriptions were completed by Mohammed Lahlouh (nos. 1-808) and Amalia Catagnoti (nos. 809-1417) after Lahlouh's passing. The volume was edited by Catagnoti, who compiled the indexes, including a Glossary with interpretations, correspondences, and comparisons with other Semitic languages. Most of the texts are administrative, with exceptions including a chancery fragment (ARET XII 620, now part of ARET XVI 1 = TM.75.G.2411+), a joined literary text (ARET XII 1024 = TM.75.G.5511, which joins ARET V 6 = TM.75.G.2421), and a possible lexical fragment (ARET XII 1227 = TM.75.G.5817; on this latter fragment, see Bonechi, 'Miscellaneous Notes' {[}2021{]}, pp.43-44).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Legrain1922}{}}%
+Legrain, L. (1922). \emph{Historical {Fragments}}. University Museum Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-LippolisViano2016}{}}%
+Lippolis, C., \& Viano, M. (2016). "{It Is Indeed} a {City}, {It Is Indeed} a {City}! {Who Knows Its Interior}?'' the {Historical} and {Geographical Setting} of {T{ū}l{ū}l} al-{Baqarat}. {Some Preliminary Remarks}. \emph{Mesopotamia: Rivista Di Archeologia, Epigrafia e Storia Orientale Antica}, \emph{51}, 143--145.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Matthiae2014d}{}}%
+Matthiae, P. (2014/2015). 50 {Years} of {Ebla Discovery}: {Past}, {Present} and {Future}. In P. Matthiae, M. Abdulkarim, F. Pinnock, \& M. Alkhalid (Eds.), \emph{Studies on the {Archaeology} of {Ebla After} 50 {Years} of {Discoveries}} (pp. 9--13).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Matthiae1986c}{}}%
+Matthiae, P. (1986). The {Archives} of the {Royal Palace G} of {Ebla}. {Distribution} and {Arrangement} of the {Tablets According} to the {Archaeological Evidence}. In K. R. Veenhof (Ed.), \emph{Cuneiform {Archives} and {Libraries}. {Papers Read} at the 30e {Rencontre Assyriologique Internationale}, {Leiden} 4-8 {July} 1983} (pp. 53--71).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Matthiae1995a}{}}%
+Matthiae, P. (1995). \emph{{Ebla: la citt{à} rivelata}}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Matthiae2008a}{}}%
+Matthiae, P. (2008). \emph{{Gli archivi reali di Ebla: la scoperta, i testi, il significato}}. Mondadori.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Matthiae2013d}{}}%
+Matthiae, P. (2013). A {Long Journey}. {Fifty Years} of {Research} on the {Bronze Age} at {Tell Mardikh}/{Ebla}. In P. Matthiae \& N. Marchetti (Eds.), \emph{Ebla and {Its Landscape}: {Early State Formation} in the {Ancient Near East}} (pp. 35--48). Left Coast Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Milano1990a}{}}%
+Milano, L. (1990). \emph{{Testi amministrativi: assegnazioni di prodotti alimentari (Archivio L.2712 - Parte I)}}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Molina2022}{}}%
+Molina, M. (2022). An {Axehead} from {Iran Dedicated} to {Mani{š}tu{š}u}. \emph{ISIMU}, \emph{25}, 163--176. \url{https://doi.org/10.15366/isimu2022.25.012}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pagan1998}{}}%
+Pagan, J. M. (1998). \emph{A {Morphological} and {Lexical Study} of {Personal Names} in the {Ebla Texts}}. Missione archeologica italiana in Siria.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Paoletti2015}{}}%
+Paoletti, P. (2015). The {Lexical Texts} from {Ebla}: {Palaeography}, {Sign Identification} and {Scribes} in the {Early Dynastic Period}. In E. Devecchi, G. G. W. Müller, \& J. Mynářová (Eds.), \emph{Current {Research} in {Cuneiform Palaeography}: {Proceedings} of the {Workshop Organised} at the 60th {Rencontre Assyriologique Internationale}, {Warsaw} 2014} (pp. 49--69). PeWe-Verlag.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Paoletti2016}{}}%
+Paoletti, P. (2016). {Die Pal{ä}ographie der lexikalischen Texte aus Ebla: Einige erste Betrachtungen}. In T. E. Balke \& C. Tsouparopoulou (Eds.), \emph{{Materiality of Writing in Early Mesopotamia}} (pp. 183--221). De Gruyter. \url{https://doi.org/10.1515/9783110459630}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pasquali1997b}{}}%
+Pasquali, J. (1997). {La terminologia semitica dei tessili nei testi di Ebla}. \emph{Miscellanea Eblaitica}, \emph{4}, 217--270.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pasquali2005a}{}}%
+Pasquali, J. (2005). \emph{{Il lessico dell'artigianato nei testi di Ebla}}. Dipartimento di linguistica, Universit{à} di Firenze.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pettinato1981a}{}}%
+Pettinato, G. (1981). \emph{{Testi lessicali monolingui della biblioteca L.2769}}. Istituto Universitario Orientale di Napoli.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pettinato1996a}{}}%
+Pettinato, G. (1996). \emph{{Testi amministrativi di Ebla archivio L.2752}}. Universit{à} degli Studi di Roma "La Sapienza".
+
+\leavevmode\vadjust pre{\hypertarget{ref-PettinatoDAgostino1994}{}}%
+Pettinato, G., \& D'Agostino, F. (1994). {Proposta di interpretazione del testo TM.75.G.2396: verdetto o accordo internazionale?} \emph{Rivista degli studi orientali}, \emph{68}(3/4), 195--206. \url{https://www.jstor.org/stable/41880817}
+
+\leavevmode\vadjust pre{\hypertarget{ref-PettinatoDAgostino1995}{}}%
+Pettinato, G., \& D'Agostino, F. (1995). \emph{{Thesaurus Inscriptionum Eblaicarum. Volume A, Parte Prima (a - AB{\texttimes}{Á}{Š}-m{í})}}. Universit{à} degli Studi di Roma "La Sapienza".
+
+\leavevmode\vadjust pre{\hypertarget{ref-PettinatoDAgostino1996}{}}%
+Pettinato, G., \& D'Agostino, F. (1996). \emph{{Thesaurus Inscriptionum Eblaicarum. Volume A, Parte Seconda ({á}b - az)}}. Universit{à} degli Studi di Roma "La Sapienza".
+
+\leavevmode\vadjust pre{\hypertarget{ref-PettinatoDAgostino1998}{}}%
+Pettinato, G., \& D'Agostino, F. (1998). \emph{{Thesaurus Inscriptionum Eblaicarum. Volume B}}. Universit{à} degli Studi di Roma "La Sapienza".
+
+\leavevmode\vadjust pre{\hypertarget{ref-PettinatoSeminara2005}{}}%
+Pettinato, G., \& Seminara, S. (2005). \emph{{Thesaurus Inscriptionum Eblaicarum. Volume D}}. Universit{à} degli Studi di Roma "La Sapienza".
+
+\leavevmode\vadjust pre{\hypertarget{ref-Peyronel2006}{}}%
+Peyronel, L. (2006). {Il palazzo e il mercante. Riflessioni sui sistemi di scambio nella Siria del III millennio a.C.} In C. Mora \& P. Piacentini (Eds.), \emph{{L'ufficio e il documento. I luoghi, i modi, gli strumenti dell'amministrazione in Egitto e nel Vicino Oriente antico}} (pp. 257--280).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Poebel1914}{}}%
+Poebel, A. (1914). \emph{Historical and {Grammatical Texts}}. University Museum.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pomponio2008a}{}}%
+Pomponio, F. (2008). \emph{{Testi amministrativi: assegnazioni mensili di tessuti, periodo di Arrugum (Archivio L.2769). Parte I}}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pomponio2013a}{}}%
+Pomponio, F. (2013). \emph{{Testi amministrativi: assegnazioni mensili di tessuti, periodo di Arrugum (Archivio L.2769). Parte II}}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-PomponioXella1997}{}}%
+Pomponio, F., \& Xella, P. (1997). \emph{{Les dieux d'Ebla: {é}tude analytique des divinit{é}s {é}bla{ï}tes {à} l'{é}poque des archives royales du IIIe mill{é}naire}}. Ugarit.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Porter2012}{}}%
+Porter, A. (2012). \emph{Mobile {Pastoralism} and the {Formation} of {Near Eastern Civilizations}}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Salgues2011}{}}%
+Salgues, E. (2011). Naram-{Sin}'s {Conquests} of {Subartu} and {Armanum}. In G. Barjamovic, J. Dahl, U. S. Koch, W. Sommerfeld, \& J. Goodnick Westenholz (Eds.), \emph{Akkade is {King}. {A Colleciton} of {Papers} by {Friends} and {Collegaues Presented} to {Aake Westenholz} on the {Occasion} of {His} 70th {Birthday} 15th of {May} 2009} (pp. 253--272).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Sallaberger2001}{}}%
+Sallaberger, W. (2001). {Die Entwicklung der Keilschrift in Ebla}. In J.-W. Meyer, M. Novák, \& A. Pruß (Eds.), \emph{{Beitr{ä}ge zur Vorderasiatischen Arch{ä}ologie: Winfried Orthmann gewidmet}} (pp. 436--445). Arch{ä}ologisches Inst.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Samir2019}{}}%
+Samir, I. (2019). \emph{{Wirtschaftstexte: Monatliche Buchf{ü}hrung {ü}ber Textilien aus Ibriums Amtszeit (Archiv L. 2769).}} Harrassowitz.
+\CSLBlock{\newline☞ This volume represents an expanded and revised version of Imad Samir's doctoral thesis, originally published by Saarland University in 2001. Titled "Buchf{ü}ührung {ü}über Textilien: Kommentierte Erstbearbeitung einer Gruppe von Wirtschaftstexten aus dem Ebla-Archiv L.2769," the book focuses on twenty monthly accounts of textiles dated to the time of minister Ibrium. While most of these texts are published for the first time, some fragments had been previously featured in publications such as MEE 2, ARET III, and XII. The introduction provides an overview of different types of fabrics, clothing, recipients, and relevant administrative terminology. Additionally, an attempt is made to establish a relative dating of these texts through a prosopographical study of the names of family members of the ruler of Ebla and others, as well as through the analysis of certain graphic features.For a review of the book, see Pasquali, 'Comptabilisation des tissus' (2020).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Scarpa2017a}{}}%
+Scarpa, E. (2017). \emph{The {City} of {Ebla}. {A Complete Bibliography} of {Its Archaeological} and {Textual Remains}}. Edizioni Ca' Foscari.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Scarpa2021b}{}}%
+Scarpa, E. (2021a). {\emph{Addenda et Corrigenda}} to {``{Studies} in {Eblaite Prosopography}:''} The dumu-nita en. \emph{Nouvelles Assyriologiques Br{è}ves Et Utilitaires}, \emph{2021/27}, 72--75.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Scarpa2021d}{}}%
+Scarpa, E. (2021b). {All the Kings' Sons: The Role and Tasks of the dumu-nita en at Ebla (Syria, 24\textsuperscript{th} cent. BCE)}. \emph{KASKAL. Rivista di storia, ambienti e culture del Vicino Oriente Antico}, \emph{18}, 25--54.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Scarpa2021a}{}}%
+Scarpa, E. (2021c). Kings' ladies at {Ebla}'s court. \emph{Nouvelles Assyriologiques Br{è}ves Et Utilitaires}, \emph{2021/26}, 69--72.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Scarpa2023}{}}%
+Scarpa, E. (2023). The {Digitization Process} of the {Spatial Data} on the {Epigraphic Discoveries} from the {Central Archive L}.2769 ({Palace G}, {Ebla}): {A Comprehensive Overview}. \emph{Studia Eblaitica}, \emph{9}, 1--63.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Sollberger1986}{}}%
+Sollberger, E. (1986). \emph{Administrative {Texts Chiefly Concerning Textiles} ({L}.2752)}. Universit{à} degli Studi di Roma "La Sapienza".
+
+\leavevmode\vadjust pre{\hypertarget{ref-Tonietti1988}{}}%
+Tonietti, M. V. (1988). {La figura del nar nei testi di Ebla. Ipotesi per una cronologia delle liste di nomi presenti nei testi economici}. \emph{Miscellanea Eblaitica}, \emph{1}, 79--119.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Tonietti1989b}{}}%
+Tonietti, M. V. (1989a). {Aggiornamento alla cronologia dei nar}. \emph{Miscellanea Eblaitica}, \emph{2}, 117--129.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Tonietti1989a}{}}%
+Tonietti, M. V. (1989b). {Le liste delle dam en: cronologia interna. Criteri ed elementi per una datazione relativa dei testi economici di Ebla}. \emph{Miscellanea Eblaitica}, \emph{2}, 79--115.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Tonietti1990}{}}%
+Tonietti, M. V. (1990). {Le liste delle dam en: proposta di join}. \emph{Nouvelles Assyriologiques Br{è}ves et Utilitaires}, \emph{1990/55}, 38--39.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Tonietti1997a}{}}%
+Tonietti, M. V. (1997). {Le cas de Mekum: continuation ou innovation dans la tradition {é}bla{ï}te entre III{è}me et II{è}me mill{é}naire}. \emph{Mari. Annales de Recherches Interdisciplinaires}, \emph{8}, 225--242.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Tonietti2013a}{}}%
+Tonietti, M. V. (2013). \emph{{Aspetti del sistema preposizionale dell'eblaita}} (Prima edizione). Edizioni Ca' Foscari.
+
+\leavevmode\vadjust pre{\hypertarget{ref-Tonietti2018b}{}}%
+Tonietti, M. V. (2018). Classification of the {Ebla Language}: {Developments} from the {Ebla Archive} and {Contemporary Evidence}. \emph{Studia Eblaitica}, \emph{4}, 1--16.
+
+\end{CSLReferences}
+
+\end{document}
