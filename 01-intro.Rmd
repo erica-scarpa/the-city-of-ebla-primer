@@ -138,6 +138,7 @@ Additionally, the EbDA database incorporates an autocomplete feature that sugges
 
 
 **1982**
+
 - Matthiae, P. 1983. "Fouilles de Tell Mardikh-Ébla en 1982: nouvelles recherches sur l’architecture palatine d'Ébla, communication du 29 avril 1983”, *CRAIBL* 127, pp.530–554. https://www.persee.fr/doc/crai_0065-0536_1983_num_127_3_14081
 
 **1983-1986**
@@ -248,7 +249,7 @@ Other useful resources include:
 |              |                                                                                                                                              |
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | *A* or *ARET*         | *Archivi Reali di Ebla, Testi*                                                                                                               |
-| AAM          | Annual Account of Metals (CAM = RAM)                                                                                                                    |
+| AAM          | Annual Account of Metals (? CAM = RAM)                                                                                                                    |
 | Akk.         | Akkadian                                                                                                                                     |
 | Ar.         | ArruLUM                                                                                                                                     |
 | *ARED*       | *Archivi Reali di Ebla, Edizione digitale* (CD-ROM)                                                                                          |
@@ -263,7 +264,7 @@ Other useful resources include:
 | *DUL*^3^     | del Olmo Lete, G.; Sanmartín, J. (2015), *A Dictionary of the Ugaritic Language in the Alphabetic Tradition* (third edition), Leiden - Boston |
 | *EbDA*       | *Ebla Digital Archives*, <http://ebda.cnr.it>                                                                                                |
 | Ebl.         | Eblaite                                                                                                                                      |
-| EBK          | eš~2~-bar-kin~5~ unilingual lexical composition                                                                                              |
+| EBK          | eš₂-bar-kin₅ unilingual lexical composition                                                                                              |
 | ED Lu~(2)~ A | Early Dynastic Lu~(2)~ A                                                                                                                     |
 | *ePSD*       | *Electronic Pennsylvania Sumerian Dictionary* <http://psd.museum.upenn.edu/nepsd-frame.html>^[Now only partially functional.]                |
 | *ePSD* 2     | *Electronic Pennsylvania Sumerian Dictionary 2* <http://oracc.museum.upenn.edu/epsd2/sux>                                                    |
@@ -275,14 +276,14 @@ Other useful resources include:
 | Ib.          | Ibrium                                                                                                                                       |
 | *M* or *MEE*         | *Materiali Epigrafici di Ebla*, Napoli-Roma.                                                                                                 |
 | MAT          | Monthly Account of Textiles                                                                                                                  |
-| ND           | Nome di divinità (DN)                                  |
-| NG           | Nome di geografico (GN)                                    |
-| NP           | Nome di persona (NP)                                    |
+| ND           | Nome di divinità                                 |
+| NG           | Nome di geografico                                    |
+| NP           | Nome di persona                                    |
 | obv.         | obverse (= recto)                                                                                                                               |
 | PN           | Personal Name                                     |
 | *PSD*        | *The Sumerian Dictionary of the University Museum of the University of Pennsylvania*, Phildelphia 1984—                                      |
 | r.           | recto (= obverse)                                                                                                                           |
-| RAM          | Resoconti Annuali di Metalli (AAM = CAM)                                                                                                    |
+| RAM          | Resoconti Annuali di Metalli (= AAM = CAM)                                                                                                    |
 | rev.         | reverse (= verso)                                                                                                                                 |
 | *RGTC*        | *Répertoire géographique des textes cunéiformes*, Wiesbaden                                                                     |
 | *RlA*        | *Reallexikon der Assyriologie und vorderasiatischen Archäologie*, Berlin                                                                     |

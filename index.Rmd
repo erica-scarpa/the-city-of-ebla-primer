@@ -21,7 +21,7 @@ github-repo: erica-scarpa/the-city-of-ebla-primer
 
 # About{-}
 
-The ancient City of Ebla offers a window into the rich cultural and historical *milieu* of ancient Syria. Through ongoing research efforts, scholars continue to unlock the secrets of this remarkable civilization. This primer serves as a foundational resource for those seeking a clear and engaging introduction to Ebla's history, culture, and the ongoing research that sheds light on its enduring legacy. This primer is available as an [online book](https://erica-scarpa.github.io/the-city-of-ebla-primer/), [PDF](https://erica-scarpa.github.io/the-city-of-ebla-primer/_main.pdf), or [ePub](https://erica-scarpa.github.io/the-city-of-ebla-primer/_main.epub).
+The ancient city of Ebla offers a window into the rich cultural and historical *milieu* of ancient Syria. Through ongoing research efforts, scholars continue to unlock the secrets of this remarkable civilization. This primer serves as a foundational resource for those seeking a clear and engaging introduction to Ebla's history, culture, and the ongoing research that sheds light on its enduring legacy. This primer is available as an [online book](https://erica-scarpa.github.io/the-city-of-ebla-primer/), [PDF](https://erica-scarpa.github.io/the-city-of-ebla-primer/_main.pdf), or [ePub](https://erica-scarpa.github.io/the-city-of-ebla-primer/_main.epub).
 Please refer to this work as 
 
 >Erica Scarpa. (2024). *The City of Ebla: A Primer* (v.0.1.0). Zenodo. https://doi.org/10.5281/zenodo.11200608
