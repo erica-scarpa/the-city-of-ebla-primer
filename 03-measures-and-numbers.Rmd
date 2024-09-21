@@ -1,0 +1,14 @@
+# Measures and Numbers
+
+## Capactities
+
+At Ebla, the weight system used a Western mina of 470 grams, with a corresponding shekel of 7.83 grams. However, scribes working at the archives also employed other systems, such as the Levantine mina (1 mina = 50 shekels of 9.4 grams) and the Anatolian mina (1 mina = 40 shekels of 11.7 grams) [@Peyronel2006, 267; @Peyronel2016, 58].
+
+```{r mina-prices, echo=FALSE, results='asis'}
+cat('
+| Price | Good | Unit price | Comment |
+|----|-----|------|-------|
+| 14 mina of silver | 5 kunga₂ | 2,8 minas | 6,85 kilos of silver, 1,37 kilos per animal (MEE 12 37 = TM.75.G.2508, obv. XIX:39-41). Note that Ru\'a-damu, the man entrusted with the silver, goes from Ebla to Nagar with a travel provision of 5 shekels of silver (39,15 gr, the equivalent in weight of two AA batteries). |
+
+')
+```
